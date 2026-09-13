@@ -1,15 +1,14 @@
--- Replace PROJECT_ID and portfolio_v1 with the authorized project and uploaded version.
--- Independent recomputation from immutable forecasts plus separately stored outcomes.
-SELECT
-  f.model,
-  COUNT(*) AS n,
-  AVG(ABS(f.prediction - o.actual)) AS mae_hours,
-  SAFE_DIVIDE(SUM(ABS(f.prediction - o.actual)), SUM(ABS(o.actual))) AS wape,
-  AVG(f.prediction - o.actual) AS signed_error_hours,
-  AVG(CAST(o.actual BETWEEN f.lower AND f.upper AS INT64)) AS coverage,
-  AVG(f.upper - f.lower) AS mean_width_hours
-FROM `PROJECT_ID.workforce.forecasts_portfolio_v1` AS f
-JOIN `PROJECT_ID.workforce.outcomes_portfolio_v1` AS o
-  USING (facility, origin, target_end)
-WHERE o.actual IS NOT NULL
-GROUP BY f.model;
+-- Run integrity.sql and require zero duplicate/unmatched keys first.
+-- LEFT JOIN preserves issued forecasts with unknown realized outcomes.
+SELECT f.dataset_version, f.model, f.model_version,
+       COUNT(*) AS issued_forecasts, COUNT(o.actual) AS n,
+       COUNTIF(o.actual IS NULL) AS unknown_outcomes,
+       AVG(ABS(f.prediction - o.actual)) AS mae_hours,
+       SAFE_DIVIDE(SUM(ABS(f.prediction - o.actual)), SUM(ABS(o.actual))) AS wape,
+       AVG(f.prediction - o.actual) AS signed_error_hours,
+       AVG(IF(o.actual IS NULL, NULL, CAST(o.actual BETWEEN f.lower AND f.upper AS FLOAT64))) AS coverage,
+       AVG(IF(o.actual IS NULL, NULL, f.upper - f.lower)) AS mean_width_hours
+FROM `{{PROJECT}}.{{DATASET}}.forecasts_{{TABLE_TAG}}` f
+LEFT JOIN `{{PROJECT}}.{{DATASET}}.outcomes_{{TABLE_TAG}}` o
+USING (dataset_version, facility, origin, target_end)
+GROUP BY 1,2,3 ORDER BY model;

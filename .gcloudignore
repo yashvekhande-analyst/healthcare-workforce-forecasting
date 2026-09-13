@@ -1,0 +1,17 @@
+# Only these files enter Cloud Build; no .git, credentials, raw data, or local logs.
+*
+!Dockerfile
+!requirements.lock
+!pyproject.toml
+!src/
+!src/**
+!app.py
+!.streamlit/
+!.streamlit/**
+!artifacts/
+!artifacts/full/
+!artifacts/full/**
+!cloud/
+!cloud/cloudbuild.yaml
+**/__pycache__/
+**/*.pyc

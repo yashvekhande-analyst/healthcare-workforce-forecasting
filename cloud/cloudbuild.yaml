@@ -1,0 +1,10 @@
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args: ['build', '-t', '${_IMAGE}', '.']
+  - name: gcr.io/cloud-builders/docker
+    args: ['run', '--rm', '--entrypoint', 'python', '${_IMAGE}', '-c', 'import workforce.cloud_job; import workforce.cloud_dashboard; import streamlit; print("Container imports passed")']
+images: ['${_IMAGE}']
+timeout: 1200s
+options:
+  logging: CLOUD_LOGGING_ONLY
+  machineType: E2_STANDARD_2

@@ -1,0 +1,1 @@
+{"rule":[{"action":{"type":"Delete"},"condition":{"daysSinceNoncurrentTime":7,"numNewerVersions":1}}]}

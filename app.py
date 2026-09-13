@@ -88,6 +88,8 @@ def main():
     st.sidebar.markdown("---")
     st.sidebar.caption("CMS publishes quarterly. Daily staffing and census availability are assumed for this replay. The app is read-only.")
     st.sidebar.caption(f"Selected model: {selected_model}\n\nVersion: {meta['version']}")
+    if os.environ.get("DATASET_VERSION"):
+        st.sidebar.caption("Artifact release: " + os.environ["DATASET_VERSION"])
     if not chosen:
         st.info("No facilities selected. Choose at least one facility and a volume group in the sidebar to review forecasts.")
         return
