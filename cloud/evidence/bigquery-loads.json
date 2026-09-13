@@ -1,0 +1,232 @@
+[
+  {
+    "job_id": "workforce_load_b428725507260fd34600cfab1e8a",
+    "table": "daily_cms_ny50_v1",
+    "source_sha256": "caa2174c5110a9264f6dc95044c73e030d579b900caeb766bb9eb7a8c06ffc31",
+    "rows": 36500,
+    "schema": {
+      "fields": [
+        {
+          "mode": "NULLABLE",
+          "name": "facility",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "date",
+          "type": "DATE"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "contract_hours",
+          "type": "FLOAT"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "employee_hours",
+          "type": "FLOAT"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "census",
+          "type": "FLOAT"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "rn_contract",
+          "type": "FLOAT"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "lpn_contract",
+          "type": "FLOAT"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "cna_contract",
+          "type": "FLOAT"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "reported",
+          "type": "BOOLEAN"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "missing_hours",
+          "type": "BOOLEAN"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "negative_hours",
+          "type": "BOOLEAN"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "component_mismatch",
+          "type": "BOOLEAN"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "invalid_census",
+          "type": "BOOLEAN"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "name",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "county",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "state",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "volume_group",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "dataset_version",
+          "type": "STRING"
+        }
+      ]
+    }
+  },
+  {
+    "job_id": "workforce_load_7d2fdc8b67a59791ec59ad92db48",
+    "table": "forecasts_cms_ny50_v1",
+    "source_sha256": "b5bc0c14c3022f50a961de8fc4a7369c12d2c5bae06a910d6b63cefef2827695",
+    "rows": 26001,
+    "schema": {
+      "fields": [
+        {
+          "mode": "NULLABLE",
+          "name": "facility",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "origin",
+          "type": "DATE"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "target_end",
+          "type": "DATE"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "volume_group",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "previous_7",
+          "type": "FLOAT"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "prediction",
+          "type": "FLOAT"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "lower",
+          "type": "FLOAT"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "upper",
+          "type": "FLOAT"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "model",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "model_version",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "split",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "interval_level",
+          "type": "FLOAT"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "training_cutoff",
+          "type": "DATE"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "calibration_target_end",
+          "type": "DATE"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "availability_assumption",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "units",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "dataset_version",
+          "type": "STRING"
+        }
+      ]
+    }
+  },
+  {
+    "job_id": "workforce_load_b370b31ace695a28b24ccb754da6",
+    "table": "outcomes_cms_ny50_v1",
+    "source_sha256": "728874d300ecd554f895a8c8795e6323d242d83ee9e1c01ee332600305dc7b66",
+    "rows": 8667,
+    "schema": {
+      "fields": [
+        {
+          "mode": "NULLABLE",
+          "name": "facility",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "origin",
+          "type": "DATE"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "target_end",
+          "type": "DATE"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "actual",
+          "type": "FLOAT"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "dataset_version",
+          "type": "STRING"
+        }
+      ]
+    }
+  }
+]

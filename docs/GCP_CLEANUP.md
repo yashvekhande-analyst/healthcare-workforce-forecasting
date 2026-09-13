@@ -1,6 +1,6 @@
 # Demo cleanup and cost controls
 
-These instructions target only **`workforce-replay-yv-260913`**. Check [verification status](GCP_VERIFICATION.md) for which resources actually exist. At the preparation checkpoint only the empty project exists; do not infer that every resource below was created.
+These instructions target only **`workforce-replay-yv-260913`**. Check [verification status](GCP_VERIFICATION.md) for the deployed resources and evidence. The existing starter projects and shared trial billing account are outside this cleanup scope.
 
 Before cleanup, save sanitized execution/query evidence and download any results you want to keep. Deletion stops future use but does not undo charges already incurred. Billing reports can lag. Close dashboard tabs after use: an open Streamlit WebSocket keeps the instance active.
 

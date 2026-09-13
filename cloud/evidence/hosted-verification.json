@@ -1,0 +1,34 @@
+{
+  "url": "https://workforce-replay-260594395044.us-central1.run.app",
+  "anonymous_root_http": 200,
+  "anonymous_health_http": 200,
+  "download_rows": 50,
+  "available_forecasts": 49,
+  "withheld": [
+    {
+      "facility": "335668",
+      "review_status": "Withheld — incomplete history"
+    }
+  ],
+  "csv_matches_frozen_forecast": true,
+  "evaluation_csv_matches_frozen_metrics": true,
+  "csv_sha256": "d76523a7d9478a22c5fda5d065d74a4939e2a08513ae9357237f9957063f54cf",
+  "browser_checks": {
+    "default_origin": "2026-03-24",
+    "changed_origin": "2025-10-01",
+    "changed_outcome_window": "2025-10-02 to 2025-10-08",
+    "selected_facilities": [
+      "335662",
+      "335175",
+      "335472"
+    ],
+    "filtered_total_display": "806 h",
+    "filtered_coverage": "3 / 3",
+    "detail_facility": "335175",
+    "detail_prediction_display": "806.5 h",
+    "detail_interval_display": "511.8–1,101.2 h",
+    "interval_band_and_actual_forecast_lines_visible": true,
+    "empty_selection_message_verified": true,
+    "version_caption": "cms-ny50-c1b7f9939a74d3d1-v1"
+  }
+}

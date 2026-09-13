@@ -1,0 +1,11 @@
+{
+  "note": "Only bindings for the three user-managed workforce identities are shown. Bucket/repository grants are separate.",
+  "bindings": [
+    {
+      "role": "roles/logging.logWriter",
+      "members": [
+        "serviceAccount:workforce-builder@workforce-replay-yv-260913.iam.gserviceaccount.com"
+      ]
+    }
+  ]
+}

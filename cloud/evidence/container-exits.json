@@ -1,0 +1,22 @@
+[
+  {
+    "timestamp": "2026-09-13T08:50:08.255168Z",
+    "execution": "workforce-replay-batch-4xx6b",
+    "message": "Container called exit(1)."
+  },
+  {
+    "timestamp": "2026-09-13T08:47:25.611089Z",
+    "execution": "workforce-replay-batch-4xx6b",
+    "message": "Container called exit(1)."
+  },
+  {
+    "timestamp": "2026-09-13T08:44:20.915505Z",
+    "execution": "workforce-replay-batch-2jvdc",
+    "message": "Container called exit(0)."
+  },
+  {
+    "timestamp": "2026-09-13T08:40:07.456913Z",
+    "execution": "workforce-replay-batch-hts2t",
+    "message": "Container called exit(0)."
+  }
+]

@@ -1,0 +1,394 @@
+{
+  "success": {
+    "apiVersion": "run.googleapis.com/v1",
+    "kind": "Execution",
+    "metadata": {
+      "annotations": {
+        "run.googleapis.com/client-name": "gcloud",
+        "run.googleapis.com/client-version": "584.0.0",
+        "run.googleapis.com/execution-environment": "gen2",
+        "run.googleapis.com/operation-id": "d6583dc3-ad45-4fbc-8cac-6a7c2aaaf985"
+      },
+      "creationTimestamp": "2026-09-13T08:39:07.020183Z",
+      "generation": 1,
+      "labels": {
+        "client.knative.dev/nonce": "zoj_rom_cem",
+        "cloud.googleapis.com/location": "us-central1",
+        "portfolio": "workforce",
+        "run.googleapis.com/job": "workforce-replay-batch",
+        "run.googleapis.com/jobGeneration": "1",
+        "run.googleapis.com/jobResourceVersion": "1789288719142253",
+        "run.googleapis.com/jobUid": "fb354e61-743d-4cd0-95b8-eecaa43a97c0"
+      },
+      "name": "workforce-replay-batch-hts2t",
+      "namespace": "260594395044",
+      "ownerReferences": [
+        {
+          "apiVersion": "serving.knative.dev/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "Job",
+          "name": "workforce-replay-batch",
+          "uid": "fb354e61-743d-4cd0-95b8-eecaa43a97c0"
+        }
+      ],
+      "resourceVersion": "AAZbWURp2ZE",
+      "selfLink": "/apis/run.googleapis.com/v1/namespaces/260594395044/executions/workforce-replay-batch-hts2t",
+      "uid": "9943cd96-3853-4618-a8ec-d09122a7d0c6"
+    },
+    "spec": {
+      "parallelism": 1,
+      "taskCount": 1,
+      "template": {
+        "spec": {
+          "containers": [
+            {
+              "args": [
+                "-m",
+                "workforce.cloud_job"
+              ],
+              "command": [
+                "python"
+              ],
+              "env": [
+                {
+                  "name": "INPUT_BUCKET",
+                  "value": "workforce-replay-yv-260913-wf-input"
+                },
+                {
+                  "name": "OUTPUT_BUCKET",
+                  "value": "workforce-replay-yv-260913-wf-output"
+                },
+                {
+                  "name": "INPUT_PREFIX",
+                  "value": "releases/cms-ny50-c1b7f9939a74d3d1-v1"
+                },
+                {
+                  "name": "INPUT_MANIFEST_SHA256",
+                  "value": "e92a44c60ade1871ca4e70889997d79f49b81b50b4a775fa7606bcca588d229a"
+                },
+                {
+                  "name": "ORIGIN",
+                  "value": "2026-03-24"
+                },
+                {
+                  "name": "ASOF",
+                  "value": "2026-03-31"
+                },
+                {
+                  "name": "OUTPUT_PREFIX",
+                  "value": "runs"
+                }
+              ],
+              "image": "us-central1-docker.pkg.dev/workforce-replay-yv-260913/workforce/runtime@sha256:840702f92e799ff0db8144a1ceeaa18fbdefe079b6bd9fe3db35b02b0fc37a76",
+              "resources": {
+                "limits": {
+                  "cpu": "1",
+                  "memory": "1Gi"
+                }
+              }
+            }
+          ],
+          "maxRetries": 1,
+          "serviceAccountName": "workforce-runner@workforce-replay-yv-260913.iam.gserviceaccount.com",
+          "timeoutSeconds": "600"
+        }
+      }
+    },
+    "status": {
+      "completionTime": "2026-09-13T08:40:11.962710Z",
+      "conditions": [
+        {
+          "lastTransitionTime": "2026-09-13T08:40:11.962710Z",
+          "message": "Execution completed successfully in 44.42s.",
+          "status": "True",
+          "type": "Completed"
+        },
+        {
+          "lastTransitionTime": "2026-09-13T08:39:08.050484Z",
+          "message": "Provisioned imported containers.",
+          "status": "True",
+          "type": "ResourcesAvailable"
+        },
+        {
+          "lastTransitionTime": "2026-09-13T08:39:58.525046Z",
+          "message": "Started deployed execution in 50.47s.",
+          "status": "True",
+          "type": "Started"
+        },
+        {
+          "lastTransitionTime": "2026-09-13T08:39:07.844912Z",
+          "message": "Imported container image.",
+          "status": "True",
+          "type": "ContainerReady"
+        }
+      ],
+      "logUri": "https://console.cloud.google.com/logs/viewer?project=workforce-replay-yv-260913&advancedFilter=resource.type%3D%22cloud_run_job%22%0Aresource.labels.job_name%3D%22workforce-replay-batch%22%0Aresource.labels.location%3D%22us-central1%22%0Alabels.%22run.googleapis.com/execution_name%22%3D%22workforce-replay-batch-hts2t%22",
+      "observedGeneration": 1,
+      "startTime": "2026-09-13T08:39:27.541694Z",
+      "succeededCount": 1
+    }
+  },
+  "repeat": {
+    "apiVersion": "run.googleapis.com/v1",
+    "kind": "Execution",
+    "metadata": {
+      "annotations": {
+        "run.googleapis.com/client-name": "gcloud",
+        "run.googleapis.com/client-version": "584.0.0",
+        "run.googleapis.com/execution-environment": "gen2",
+        "run.googleapis.com/operation-id": "956d29c2-44a1-4c37-808f-5ef369a3e2c4"
+      },
+      "creationTimestamp": "2026-09-13T08:41:40.331531Z",
+      "generation": 1,
+      "labels": {
+        "client.knative.dev/nonce": "zoj_rom_cem",
+        "cloud.googleapis.com/location": "us-central1",
+        "portfolio": "workforce",
+        "run.googleapis.com/job": "workforce-replay-batch",
+        "run.googleapis.com/jobGeneration": "1",
+        "run.googleapis.com/jobResourceVersion": "1789288818259287",
+        "run.googleapis.com/jobUid": "fb354e61-743d-4cd0-95b8-eecaa43a97c0"
+      },
+      "name": "workforce-replay-batch-2jvdc",
+      "namespace": "260594395044",
+      "ownerReferences": [
+        {
+          "apiVersion": "serving.knative.dev/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "Job",
+          "name": "workforce-replay-batch",
+          "uid": "fb354e61-743d-4cd0-95b8-eecaa43a97c0"
+        }
+      ],
+      "resourceVersion": "AAZbWVM6AgQ",
+      "selfLink": "/apis/run.googleapis.com/v1/namespaces/260594395044/executions/workforce-replay-batch-2jvdc",
+      "uid": "b5f4cdbf-2a74-4afa-a0d9-88e2aa226039"
+    },
+    "spec": {
+      "parallelism": 1,
+      "taskCount": 1,
+      "template": {
+        "spec": {
+          "containers": [
+            {
+              "args": [
+                "-m",
+                "workforce.cloud_job"
+              ],
+              "command": [
+                "python"
+              ],
+              "env": [
+                {
+                  "name": "INPUT_BUCKET",
+                  "value": "workforce-replay-yv-260913-wf-input"
+                },
+                {
+                  "name": "OUTPUT_BUCKET",
+                  "value": "workforce-replay-yv-260913-wf-output"
+                },
+                {
+                  "name": "INPUT_PREFIX",
+                  "value": "releases/cms-ny50-c1b7f9939a74d3d1-v1"
+                },
+                {
+                  "name": "INPUT_MANIFEST_SHA256",
+                  "value": "e92a44c60ade1871ca4e70889997d79f49b81b50b4a775fa7606bcca588d229a"
+                },
+                {
+                  "name": "ORIGIN",
+                  "value": "2026-03-24"
+                },
+                {
+                  "name": "ASOF",
+                  "value": "2026-03-31"
+                },
+                {
+                  "name": "OUTPUT_PREFIX",
+                  "value": "runs"
+                }
+              ],
+              "image": "us-central1-docker.pkg.dev/workforce-replay-yv-260913/workforce/runtime@sha256:840702f92e799ff0db8144a1ceeaa18fbdefe079b6bd9fe3db35b02b0fc37a76",
+              "resources": {
+                "limits": {
+                  "cpu": "1",
+                  "memory": "1Gi"
+                }
+              }
+            }
+          ],
+          "maxRetries": 1,
+          "serviceAccountName": "workforce-runner@workforce-replay-yv-260913.iam.gserviceaccount.com",
+          "timeoutSeconds": "600"
+        }
+      }
+    },
+    "status": {
+      "completionTime": "2026-09-13T08:44:25.402639Z",
+      "conditions": [
+        {
+          "lastTransitionTime": "2026-09-13T08:44:25.402639Z",
+          "message": "Execution completed successfully in 2m29.88s.",
+          "status": "True",
+          "type": "Completed"
+        },
+        {
+          "lastTransitionTime": "2026-09-13T08:41:41.359152Z",
+          "message": "Provisioned imported containers.",
+          "status": "True",
+          "type": "ResourcesAvailable"
+        },
+        {
+          "lastTransitionTime": "2026-09-13T08:44:07.124027Z",
+          "message": "Started deployed execution in 2m25.76s.",
+          "status": "True",
+          "type": "Started"
+        },
+        {
+          "lastTransitionTime": "2026-09-13T08:41:41.200418Z",
+          "message": "Imported container image.",
+          "status": "True",
+          "type": "ContainerReady"
+        }
+      ],
+      "logUri": "https://console.cloud.google.com/logs/viewer?project=workforce-replay-yv-260913&advancedFilter=resource.type%3D%22cloud_run_job%22%0Aresource.labels.job_name%3D%22workforce-replay-batch%22%0Aresource.labels.location%3D%22us-central1%22%0Alabels.%22run.googleapis.com/execution_name%22%3D%22workforce-replay-batch-2jvdc%22",
+      "observedGeneration": 1,
+      "startTime": "2026-09-13T08:41:55.517355Z",
+      "succeededCount": 1
+    }
+  },
+  "failure": {
+    "apiVersion": "run.googleapis.com/v1",
+    "kind": "Execution",
+    "metadata": {
+      "annotations": {
+        "run.googleapis.com/client-name": "gcloud",
+        "run.googleapis.com/client-version": "584.0.0",
+        "run.googleapis.com/execution-environment": "gen2",
+        "run.googleapis.com/operation-id": "3f205738-941c-4410-a7de-fa983015a1fa"
+      },
+      "creationTimestamp": "2026-09-13T08:46:18.910894Z",
+      "generation": 1,
+      "labels": {
+        "client.knative.dev/nonce": "zoj_rom_cem",
+        "cloud.googleapis.com/location": "us-central1",
+        "portfolio": "workforce",
+        "run.googleapis.com/job": "workforce-replay-batch",
+        "run.googleapis.com/jobGeneration": "1",
+        "run.googleapis.com/jobResourceVersion": "1789289066780382",
+        "run.googleapis.com/jobUid": "fb354e61-743d-4cd0-95b8-eecaa43a97c0"
+      },
+      "name": "workforce-replay-batch-4xx6b",
+      "namespace": "260594395044",
+      "ownerReferences": [
+        {
+          "apiVersion": "serving.knative.dev/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "Job",
+          "name": "workforce-replay-batch",
+          "uid": "fb354e61-743d-4cd0-95b8-eecaa43a97c0"
+        }
+      ],
+      "resourceVersion": "AAZbWWgBr+o",
+      "selfLink": "/apis/run.googleapis.com/v1/namespaces/260594395044/executions/workforce-replay-batch-4xx6b",
+      "uid": "d224ede8-2e40-4478-a0c8-26b6db4dd0fb"
+    },
+    "spec": {
+      "parallelism": 1,
+      "taskCount": 1,
+      "template": {
+        "spec": {
+          "containers": [
+            {
+              "args": [
+                "-m",
+                "workforce.cloud_job"
+              ],
+              "command": [
+                "python"
+              ],
+              "env": [
+                {
+                  "name": "INPUT_BUCKET",
+                  "value": "workforce-replay-yv-260913-wf-input"
+                },
+                {
+                  "name": "OUTPUT_BUCKET",
+                  "value": "workforce-replay-yv-260913-wf-output"
+                },
+                {
+                  "name": "INPUT_PREFIX",
+                  "value": "tests/intentionally-missing"
+                },
+                {
+                  "name": "INPUT_MANIFEST_SHA256",
+                  "value": "e92a44c60ade1871ca4e70889997d79f49b81b50b4a775fa7606bcca588d229a"
+                },
+                {
+                  "name": "ORIGIN",
+                  "value": "2026-03-24"
+                },
+                {
+                  "name": "ASOF",
+                  "value": "2026-03-31"
+                },
+                {
+                  "name": "OUTPUT_PREFIX",
+                  "value": "tests/missing-input"
+                }
+              ],
+              "image": "us-central1-docker.pkg.dev/workforce-replay-yv-260913/workforce/runtime@sha256:840702f92e799ff0db8144a1ceeaa18fbdefe079b6bd9fe3db35b02b0fc37a76",
+              "resources": {
+                "limits": {
+                  "cpu": "1",
+                  "memory": "1Gi"
+                }
+              }
+            }
+          ],
+          "maxRetries": 1,
+          "serviceAccountName": "workforce-runner@workforce-replay-yv-260913.iam.gserviceaccount.com",
+          "timeoutSeconds": "120"
+        }
+      }
+    },
+    "status": {
+      "completionTime": "2026-09-13T08:50:13.294716Z",
+      "conditions": [
+        {
+          "lastTransitionTime": "2026-09-13T08:50:13.294716Z",
+          "message": "Task workforce-replay-batch-4xx6b-task0 failed with exit code: 1 and message: The container exited with an error.",
+          "reason": "NonZeroExitCode",
+          "status": "False",
+          "type": "Completed"
+        },
+        {
+          "lastTransitionTime": "2026-09-13T08:46:20.009648Z",
+          "message": "Provisioned imported containers.",
+          "status": "True",
+          "type": "ResourcesAvailable"
+        },
+        {
+          "lastTransitionTime": "2026-09-13T08:47:16.080276Z",
+          "message": "Started deployed execution in 56.07s.",
+          "status": "True",
+          "type": "Started"
+        },
+        {
+          "lastTransitionTime": "2026-09-13T08:46:19.833939Z",
+          "message": "Imported container image.",
+          "status": "True",
+          "type": "ContainerReady"
+        }
+      ],
+      "failedCount": 1,
+      "logUri": "https://console.cloud.google.com/logs/viewer?project=workforce-replay-yv-260913&advancedFilter=resource.type%3D%22cloud_run_job%22%0Aresource.labels.job_name%3D%22workforce-replay-batch%22%0Aresource.labels.location%3D%22us-central1%22%0Alabels.%22run.googleapis.com/execution_name%22%3D%22workforce-replay-batch-4xx6b%22",
+      "observedGeneration": 1,
+      "retriedCount": 1,
+      "startTime": "2026-09-13T08:46:29.516513Z"
+    }
+  }
+}

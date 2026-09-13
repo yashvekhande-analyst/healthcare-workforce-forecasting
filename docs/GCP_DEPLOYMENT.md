@@ -1,6 +1,6 @@
 # Google Cloud deployment
 
-This extends the existing historical replay. It never acquires new CMS data, retunes, or retrains the model. **Consult [verification status](GCP_VERIFICATION.md) before describing any component as deployed.** CLI access, local preparation and Linux container execution are verified; billable Google Cloud execution is pending billing setup.
+This extends the existing historical replay. It never acquires new CMS data, retunes, or retrains the model. **Consult [verification status](GCP_VERIFICATION.md) for the executed resources, query results, and runtime evidence.**
 
 ## Region, identity, and cost
 
@@ -24,7 +24,7 @@ Plan for **$1–$3 under light use**. Charges depend on actual billed resources,
 
 A public dashboard with a continuously active connection is materially different: one 1-vCPU/1-GiB instance active for 30 days is about **$68.69** before requests, egress, other services, and credits. [WebSocket connections remain active requests](https://docs.cloud.google.com/run/docs/triggering/websockets); close tabs after demonstrations. Min=0 and max=1 are scale controls, not total-spend controls or guarantees against transient platform overshoot.
 
-[Budget alerts do not cap spending](https://docs.cloud.google.com/billing/docs/how-to/budgets). Before execution, create a project-filtered $5 budget with 50%, 80%, and 100% thresholds, review billing frequently, and use [cleanup](GCP_CLEANUP.md) when the demo is no longer needed. No paid reservation, recurring batch schedule, Vertex AI, Kubernetes, or load balancer is used.
+[Budget alerts do not cap spending](https://docs.cloud.google.com/billing/docs/how-to/budgets). A project-filtered $5 budget was created for September 13–October 13, 2026 with 50%, 80%, and 100% thresholds. It excludes credits from the cost calculation so credits do not hide gross usage. Project billing is enabled; account identifiers, payment details and credit balances are omitted from public evidence. Review billing frequently and use [cleanup](GCP_CLEANUP.md) when the demo is no longer needed. No paid reservation, recurring batch schedule, Vertex AI, Kubernetes, or load balancer is used.
 
 ## Preparation and access
 
@@ -82,6 +82,17 @@ BigQuery loads use deterministic job IDs derived from table name and export hash
 ```
 
 The build uses a dedicated identity, private regional source bucket, `.gcloudignore` allowlist, pinned Python dependencies, and the existing Dockerfile. It tests imports inside the built container. Record the successful build ID and its `results.images[].digest` using `gcloud builds describe BUILD_ID --region=$region --project=$project --format=json`.
+
+The verified Windows environment could not create the CLI's temporary archive directory. This supported alternative packages only the Dockerfile, pinned package files, application, source, Streamlit config, and existing artifact bundle. It normalizes archive metadata, names the object by SHA-256, creates it exclusively, and checks its downloaded bytes. No credentials or local work directory enter the archive:
+
+```powershell
+python cloud/package_source.py --bucket "$project-wf-build" --evidence "$evidence/build-source.json"
+# Copy the gs:// source URL printed by the command above.
+$sourceArchive = 'gs://REPLACE_WITH_PRINTED_SOURCE_URL'
+./cloud/deploy.ps1 -ProjectId $project -Stage $stage -Phase Build -SourceArchive $sourceArchive -Execute -BudgetConfirmed
+```
+
+Bucket lifecycle configuration similarly uses the official Storage JSON API with a metageneration precondition, avoiding the CLI's Windows multiprocessing limitation. BigQuery operations use REST with the normal CLI access token held only in process memory; no service-account key or separate application-default login is required. Coverage SQL converts the Boolean interval indicator to INT64 before averaging, as required by GoogleSQL.
 
 ```powershell
 $digest = 'sha256:REPLACE_WITH_SUCCESSFUL_BUILD_DIGEST'

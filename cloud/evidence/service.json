@@ -1,0 +1,162 @@
+{
+  "apiVersion": "serving.knative.dev/v1",
+  "kind": "Service",
+  "metadata": {
+    "annotations": {
+      "run.googleapis.com/client-name": "gcloud",
+      "run.googleapis.com/client-version": "584.0.0",
+      "run.googleapis.com/ingress": "all",
+      "run.googleapis.com/ingress-status": "all",
+      "run.googleapis.com/maxScale": "1",
+      "run.googleapis.com/operation-id": "a8bf41cb-74e1-4471-843e-a56e1f363f6b",
+      "run.googleapis.com/urls": "[\"https://workforce-replay-260594395044.us-central1.run.app\",\"https://workforce-replay-uhbmlildea-uc.a.run.app\"]"
+    },
+    "creationTimestamp": "2026-09-13T08:37:15.042960Z",
+    "generation": 1,
+    "labels": {
+      "cloud.googleapis.com/location": "us-central1",
+      "portfolio": "workforce"
+    },
+    "name": "workforce-replay",
+    "namespace": "260594395044",
+    "resourceVersion": "AAZbWT4J8F4",
+    "selfLink": "/apis/serving.knative.dev/v1/namespaces/260594395044/services/workforce-replay",
+    "uid": "e75974c7-026c-446d-bca8-518456f6573b"
+  },
+  "spec": {
+    "template": {
+      "metadata": {
+        "annotations": {
+          "run.googleapis.com/client-name": "gcloud",
+          "run.googleapis.com/client-version": "584.0.0",
+          "run.googleapis.com/cpu-throttling": "true",
+          "run.googleapis.com/execution-environment": "gen2",
+          "run.googleapis.com/sessionAffinity": "true",
+          "run.googleapis.com/startup-cpu-boost": "true"
+        },
+        "labels": {
+          "client.knative.dev/nonce": "uyohifrqer",
+          "portfolio": "workforce",
+          "run.googleapis.com/startupProbeType": "Default"
+        }
+      },
+      "spec": {
+        "containerConcurrency": 10,
+        "containers": [
+          {
+            "args": [
+              "-m",
+              "workforce.cloud_dashboard"
+            ],
+            "command": [
+              "python"
+            ],
+            "env": [
+              {
+                "name": "WORKFORCE_RELEASE_ROOT",
+                "value": "/mnt/release"
+              },
+              {
+                "name": "WORKFORCE_ARTIFACTS",
+                "value": "/mnt/release/full"
+              },
+              {
+                "name": "DATASET_VERSION",
+                "value": "cms-ny50-c1b7f9939a74d3d1-v1"
+              },
+              {
+                "name": "DASHBOARD_RELEASE_PREFIX",
+                "value": "releases/cms-ny50-c1b7f9939a74d3d1-v1"
+              },
+              {
+                "name": "DASHBOARD_MANIFEST_SHA256",
+                "value": "44c386410af85f7d83947c4280081213f4d03be2252534ea05add38cf9d783d4"
+              }
+            ],
+            "image": "us-central1-docker.pkg.dev/workforce-replay-yv-260913/workforce/runtime@sha256:840702f92e799ff0db8144a1ceeaa18fbdefe079b6bd9fe3db35b02b0fc37a76",
+            "ports": [
+              {
+                "containerPort": 8080,
+                "name": "http1"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "1",
+                "memory": "1Gi"
+              }
+            },
+            "startupProbe": {
+              "failureThreshold": 1,
+              "periodSeconds": 240,
+              "tcpSocket": {
+                "port": 8080
+              },
+              "timeoutSeconds": 240
+            },
+            "volumeMounts": [
+              {
+                "mountPath": "/mnt/release",
+                "name": "cloud-storage-riz-tik"
+              }
+            ]
+          }
+        ],
+        "serviceAccountName": "workforce-viewer@workforce-replay-yv-260913.iam.gserviceaccount.com",
+        "timeoutSeconds": 3600,
+        "volumes": [
+          {
+            "csi": {
+              "driver": "gcsfuse.run.googleapis.com",
+              "readOnly": true,
+              "volumeAttributes": {
+                "bucketName": "workforce-replay-yv-260913-wf-view",
+                "mountOptions": "only-dir=releases/cms-ny50-c1b7f9939a74d3d1-v1"
+              }
+            },
+            "name": "cloud-storage-riz-tik"
+          }
+        ]
+      }
+    },
+    "traffic": [
+      {
+        "latestRevision": true,
+        "percent": 100
+      }
+    ]
+  },
+  "status": {
+    "address": {
+      "url": "https://workforce-replay-uhbmlildea-uc.a.run.app"
+    },
+    "conditions": [
+      {
+        "lastTransitionTime": "2026-09-13T08:38:31.319646Z",
+        "status": "True",
+        "type": "Ready"
+      },
+      {
+        "lastTransitionTime": "2026-09-13T08:38:13.983926Z",
+        "status": "True",
+        "type": "ConfigurationsReady"
+      },
+      {
+        "lastTransitionTime": "2026-09-13T08:38:31.279066Z",
+        "status": "True",
+        "type": "RoutesReady"
+      }
+    ],
+    "latestCreatedRevisionName": "workforce-replay-00001-lcp",
+    "latestReadyRevisionName": "workforce-replay-00001-lcp",
+    "observedGeneration": 1,
+    "traffic": [
+      {
+        "latestRevision": true,
+        "percent": 100,
+        "revisionName": "workforce-replay-00001-lcp"
+      }
+    ],
+    "url": "https://workforce-replay-uhbmlildea-uc.a.run.app"
+  }
+}

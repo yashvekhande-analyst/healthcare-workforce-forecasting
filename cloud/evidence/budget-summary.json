@@ -1,0 +1,15 @@
+{
+  "project": "workforce-replay-yv-260913",
+  "currency": "USD",
+  "amount": 5,
+  "start_date": "2026-09-13",
+  "end_date": "2026-10-13",
+  "thresholds": [
+    0.5,
+    0.8,
+    1.0
+  ],
+  "credit_treatment": "EXCLUDE_ALL_CREDITS",
+  "hard_spending_cap": false,
+  "final_billed_cost": "Not established by this verification evidence"
+}

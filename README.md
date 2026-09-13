@@ -17,6 +17,8 @@ This is a **historical replay** using quarterly public releases. Daily feed avai
 
 **Start here:** [three-minute demonstration](docs/DEMO_SCRIPT.md) · [executive brief](artifacts/full/reports/EXECUTIVE_BRIEF.md) · [technical evaluation](artifacts/full/reports/BACKTEST.md) · [verification record](VERIFICATION.md)
 
+**Verified GCP demonstration:** [public Cloud Run dashboard](https://workforce-replay-260594395044.us-central1.run.app) · [cloud execution evidence](docs/GCP_VERIFICATION.md). BigQuery reproduces all three saved models; the bounded historical job passed a repeat and an intentional missing-input failure. The data buckets remain private.
+
 ## What this demonstrates
 
 - **Python and SQL:** an installable package, DuckDB calendar windows, Parquet artifacts and a Streamlit dashboard.
@@ -113,4 +115,4 @@ CMS may revise or retire releases. A new acquisition can therefore differ from t
 - **Scope:** 50 nursing homes in one state; facilities were selected using early training history. Findings do not establish generalization to other facilities, hospitals or staffing decisions.
 - **Missingness:** forecasts require 28 complete history days. True reported zeros are preserved. Seven complete future days are required for evaluation; reported performance is conditional on evaluable records.
 - **Reliability:** intervals are empirical, undercoverage is measured, and facility bounds cannot be summed into a joint portfolio interval. Monitoring prompts review; it never automatically retrains or deploys.
-- **Deployment:** local application and automated checks are verified. The [GCP extension](docs/GCP_DEPLOYMENT.md) adds versioned private storage, typed BigQuery reconciliation, a read-only Cloud Run dashboard, and one bounded replay job. [Cloud verification status](docs/GCP_VERIFICATION.md) distinguishes local tests from executed cloud work; hosted deployment is currently pending billing. [Learning guide](docs/GCP_LEARNING_GUIDE.md) and [resource cleanup](docs/GCP_CLEANUP.md) are included. No production use, employer affiliation, customers or savings are claimed.
+- **Deployment:** the [GCP extension](docs/GCP_DEPLOYMENT.md) is deployed and verified: private versioned storage, typed BigQuery reconciliation, a public read-only Cloud Run dashboard, and one bounded replay job. [Cloud evidence](docs/GCP_VERIFICATION.md) records the actual image digest, query/execution IDs, hosted browser checks, repeat safety and controlled failure. [Learning guide](docs/GCP_LEARNING_GUIDE.md) and [resource cleanup](docs/GCP_CLEANUP.md) are included. This is hands-on portfolio experience; no enterprise production use, employer affiliation, customers or savings are claimed.

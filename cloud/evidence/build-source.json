@@ -1,0 +1,304 @@
+{
+  "bucket": "workforce-replay-yv-260913-wf-build",
+  "bytes": 3585439,
+  "files": [
+    {
+      "bytes": 202,
+      "path": ".streamlit/config.toml",
+      "sha256": "8d507d6f946d0059ab103e175cab8880ed62646e0f660a7c0d3d6bd67af94833"
+    },
+    {
+      "bytes": 19044,
+      "path": "app.py",
+      "sha256": "4470d507abad9fd61a418e6088d2bf9c1ab0c7f19714931c5bf2f0dfb1b1d90e"
+    },
+    {
+      "bytes": 4059,
+      "path": "artifacts/full/actuals/c1b7f9939a74d3d1/asof-2026-03-31.parquet",
+      "sha256": "f422b1a06a50f9e911a8166a375832b09799b6e649921ad85c362c86800823ce"
+    },
+    {
+      "bytes": 1627,
+      "path": "artifacts/full/backtest_summary.json",
+      "sha256": "745d6d5e343db01f73eff6df4d00f6abb20c586d9c9dd06faf08682eb1e9a41f"
+    },
+    {
+      "bytes": 33890,
+      "path": "artifacts/full/calibration_predictions.parquet",
+      "sha256": "b6e4e94896af9f3bedfd1ffc3888d559f3db1c6a3fb3f9ec01bd934bbf33be4a"
+    },
+    {
+      "bytes": 680,
+      "path": "artifacts/full/config_snapshot.json",
+      "sha256": "456c23c512857ce9b6dd281b9693daabd9a7dcc2c8bd40a8a0638583cd76bc01"
+    },
+    {
+      "bytes": 457605,
+      "path": "artifacts/full/daily.parquet",
+      "sha256": "6069ca967da4613563f88dd96742d9559a89c3a784e80f36733c14a4e7da1259"
+    },
+    {
+      "bytes": 64450,
+      "path": "artifacts/full/eligibility.csv",
+      "sha256": "9ffca9c1bcb2d061f3053d7afedaa1349050aad56145afb3f696271f0d56ac1d"
+    },
+    {
+      "bytes": 519894,
+      "path": "artifacts/full/evaluation.parquet",
+      "sha256": "579d127ea3d27b7c2dc4eb43cec98fe3eb1d8ee66215e5d6517a08b5a856ad0d"
+    },
+    {
+      "bytes": 11872,
+      "path": "artifacts/full/facilities.parquet",
+      "sha256": "d64d891d670fa9eee5cd506f9d4d17fd40ed414a730ae04ad14d127fea4c11c4"
+    },
+    {
+      "bytes": 1825055,
+      "path": "artifacts/full/features.parquet",
+      "sha256": "42351c7944cebd6970766f04aa022ef04cb4f10609061952e00e0348bcbeca86"
+    },
+    {
+      "bytes": 11800,
+      "path": "artifacts/full/forecasts/c1b7f9939a74d3d1/2026-03-24.parquet",
+      "sha256": "bc3c742d65df98695fba054aacbe30580edbf507e027fce35336b7e40d9ee328"
+    },
+    {
+      "bytes": 11820,
+      "path": "artifacts/full/forecasts/c1b7f9939a74d3d1/2026-03-31.parquet",
+      "sha256": "51872d6ec6a9e728a5aa1128b1b9bc6c081d6d490cd65c64752a34b35db5b1d0"
+    },
+    {
+      "bytes": 211285,
+      "path": "artifacts/full/models/bundle.joblib",
+      "sha256": "ae014a6bb53d3157650d5bdd850f9c69af72e83b1b45580ed26638e566c0eaf0"
+    },
+    {
+      "bytes": 5817,
+      "path": "artifacts/full/models/metadata.json",
+      "sha256": "5c632fefbbaad29109039161b06824d38c629bb1e7bb64feac01555fe1965f08"
+    },
+    {
+      "bytes": 1165,
+      "path": "artifacts/full/monitoring.json",
+      "sha256": "5ee37b6643aceb7159eda297160c978aaa8a13bc0103f12d903a9fb041831959"
+    },
+    {
+      "bytes": 1892,
+      "path": "artifacts/full/monitoring_demo.json",
+      "sha256": "3cd2877c4319f1c962de7ae68cdb23fe2bed0f2d53d7c39a289a77c7e6b1c5e4"
+    },
+    {
+      "bytes": 17366,
+      "path": "artifacts/full/quality.json",
+      "sha256": "ca6bf349df2ab0c77fc79fbeae8b0ce386673252fc8b45f64a79f4c51ed63f58"
+    },
+    {
+      "bytes": 5775,
+      "path": "artifacts/full/reports/BACKTEST.md",
+      "sha256": "a0e921fc1d0ef60040039af94bfd0363eb52cad13d04af0b00c57f60eaf38f72"
+    },
+    {
+      "bytes": 17816,
+      "path": "artifacts/full/reports/browser_download_sample.csv",
+      "sha256": "3ed361d539f5155ba927c234e316e3a6ce113becdeb4c1fbab7c420aed8d09e2"
+    },
+    {
+      "bytes": 2976,
+      "path": "artifacts/full/reports/EDA.md",
+      "sha256": "8f657946eab0490a4907f628ed97ebb52c6afa944268a6cfe2842b2ca389db90"
+    },
+    {
+      "bytes": 373,
+      "path": "artifacts/full/reports/eda_statistics.json",
+      "sha256": "793f99d284e40b2cb67913fddbc1aed151be74974496cf2beb4c67689d3698ed"
+    },
+    {
+      "bytes": 2756,
+      "path": "artifacts/full/reports/EXECUTIVE_BRIEF.html",
+      "sha256": "bce76659aaa17d0f28f75a351dd44bbbf02b1ad52f88ce33c88c36801efd248a"
+    },
+    {
+      "bytes": 2295,
+      "path": "artifacts/full/reports/EXECUTIVE_BRIEF.md",
+      "sha256": "8a35c02686ae23e554217c823ed2c10a184c11fa1b161ab34672c7ac2f9fec7f"
+    },
+    {
+      "bytes": 22445,
+      "path": "artifacts/full/reports/facility_metrics.csv",
+      "sha256": "fdcfe4fcb4f398aa585a69654a88cee4d53ca621cd920522d5d63814458d4aa1"
+    },
+    {
+      "bytes": 48327,
+      "path": "artifacts/full/reports/figures/backtest.png",
+      "sha256": "e86f5599cf7e873780a48ea32f5519559ecd75d9f1732c6ce8b7f7f0e63c1b33"
+    },
+    {
+      "bytes": 281813,
+      "path": "artifacts/full/reports/figures/eda_patterns.png",
+      "sha256": "b435d68ba27c84b3585ddc1687627a93a1a3169ef581516363fe733b0524b16d"
+    },
+    {
+      "bytes": 53013,
+      "path": "artifacts/full/reports/figures/facility_variation.png",
+      "sha256": "a7cf1198b5e5a7a50871b842a26251bce959e854d3427fd2dca6148eab9bd79c"
+    },
+    {
+      "bytes": 416,
+      "path": "artifacts/full/reports/independent_sql_metrics.csv",
+      "sha256": "d0c687e668833ad284f25f2f002399ea3d515ca103af13b514c2c5193427f549"
+    },
+    {
+      "bytes": 639,
+      "path": "artifacts/full/reports/nonoverlap_test_metrics.csv",
+      "sha256": "ae82247e8d9d54929a7add140984250a17757945efcc45ef59bf3daf76de7796"
+    },
+    {
+      "bytes": 217,
+      "path": "artifacts/full/reports/quarter_coverage.csv",
+      "sha256": "43aa5ca25f496f049e88ade350f972851af51bfb798316fd01d47026cac851e4"
+    },
+    {
+      "bytes": 3663,
+      "path": "artifacts/full/reports/representative_failures.csv",
+      "sha256": "1c646b9f0fb4f991d6cd9ec3a11203b2e26c7c5817c8c0c5fc9f3aca9541e50e"
+    },
+    {
+      "bytes": 639,
+      "path": "artifacts/full/reports/test_metrics.csv",
+      "sha256": "9aef63c44c35e8e2964544253fed1f0d628cdd2378d9647c732241917b63698f"
+    },
+    {
+      "bytes": 2182,
+      "path": "artifacts/full/reports/training_facility_patterns.csv",
+      "sha256": "d5da628b76352f98ed2b5941d7b5f298757c417c756d83cb46359d38fcabfd5c"
+    },
+    {
+      "bytes": 428,
+      "path": "artifacts/full/reports/training_unusual_observations.csv",
+      "sha256": "de27d19d20dea3bef02b34b323f72a40d2a2d42867aa974d95d2d07da7cdfcf5"
+    },
+    {
+      "bytes": 1806,
+      "path": "artifacts/full/reports/validation_fold_metrics.csv",
+      "sha256": "0220746c60313f2e0de20b7adce98140646d573b2c4dafeba3ba912344fc39ed"
+    },
+    {
+      "bytes": 860,
+      "path": "artifacts/full/reports/validation_metrics.csv",
+      "sha256": "8412ebbb0f382b9c507146ab2ffa337a18dc78079e723354bcf33a8b92fa93cb"
+    },
+    {
+      "bytes": 1752,
+      "path": "artifacts/full/reports/volume_metrics.csv",
+      "sha256": "43c3293b2c18b2f7d1da8b3dfd84754f3a9f48a0c7cfbe714d85e2e7ac43c155"
+    },
+    {
+      "bytes": 482216,
+      "path": "artifacts/full/test_forecasts.parquet",
+      "sha256": "ea2bb0d333a2aa8f01258428bdf6438e415e5454b092eb24d5b699a1c3c21ead"
+    },
+    {
+      "bytes": 37348,
+      "path": "artifacts/full/test_outcomes.parquet",
+      "sha256": "ffa31e8f9f3d1b0cd2c3e1d4750dc2abf04abb99fa43f09ed3bcb045b6b80eec"
+    },
+    {
+      "bytes": 288098,
+      "path": "artifacts/full/validation_predictions.parquet",
+      "sha256": "370109f167b7e54dcbbfc47c2bcbbc89ff62ce3f49c74c09fc3aa66a0686644a"
+    },
+    {
+      "bytes": 802,
+      "path": "Dockerfile",
+      "sha256": "c5941243b21a77f2692c38936e896f71cfb333acf95a5580bb290cd64077bd72"
+    },
+    {
+      "bytes": 809,
+      "path": "pyproject.toml",
+      "sha256": "b5498442c1f40d313e543e1a000359df79adf2fdd4baaf51e6b075dbb65f7fbc"
+    },
+    {
+      "bytes": 983,
+      "path": "requirements.lock",
+      "sha256": "364bf2d38436639646d060ab8cdac0a71d8b9c743731affba4e402aed85fa829"
+    },
+    {
+      "bytes": 101,
+      "path": "src/workforce/__init__.py",
+      "sha256": "4c020b406c9d0106b49effe65251e3fd5ef65251451f876fec5409c8331b9b01"
+    },
+    {
+      "bytes": 3489,
+      "path": "src/workforce/cli.py",
+      "sha256": "b8ef67b185b7ad5b015fd832fd281890b54c5d3791750760bdcc2e2748153542"
+    },
+    {
+      "bytes": 2075,
+      "path": "src/workforce/cloud_dashboard.py",
+      "sha256": "49730ce7172cc4672f5e36e9b7c2483168362a04a8506c20f728ccbe8df8f6ee"
+    },
+    {
+      "bytes": 11061,
+      "path": "src/workforce/cloud_job.py",
+      "sha256": "adab03ae45c38bf64d86e67e86274bd4e8db55c122bf7e27d4be987ca46cbd63"
+    },
+    {
+      "bytes": 1522,
+      "path": "src/workforce/config.py",
+      "sha256": "e01cb51ab0a269d89cf0656fbec2d2e90b9cd40a015454ceba868c1e98581b75"
+    },
+    {
+      "bytes": 6958,
+      "path": "src/workforce/ingest.py",
+      "sha256": "80d94b794c596ca4fb35d1d5ce5c3cecd89eadf6f40a334f9dc619f2597bfb87"
+    },
+    {
+      "bytes": 1717,
+      "path": "src/workforce/metrics.py",
+      "sha256": "537f34ee9845a5f7e47715c86e5da5421672823f09f7251c07d26fe1f9f053e4"
+    },
+    {
+      "bytes": 12162,
+      "path": "src/workforce/modeling.py",
+      "sha256": "359e4ce9c47b5df68c54dded40b5b37985237252a728ea61c8e93acfb4578ceb"
+    },
+    {
+      "bytes": 5102,
+      "path": "src/workforce/monitoring.py",
+      "sha256": "37233698c569cc181101e2f7f6bff86d86805c312319993b7fce606e5f16d260"
+    },
+    {
+      "bytes": 2233,
+      "path": "src/workforce/predict.py",
+      "sha256": "e904a0b8718533f71108eb6bac78883ae675d76a97773294c5e453ea95d96e03"
+    },
+    {
+      "bytes": 7103,
+      "path": "src/workforce/prepare.py",
+      "sha256": "4da20d97530022b79d9406ea76f60e9fa427b4a0f72c97b57584ca9cc56bdac5"
+    },
+    {
+      "bytes": 19277,
+      "path": "src/workforce/reporting.py",
+      "sha256": "03406eb5abddfe7d6b466c67f9b9360a292788d64b038b9d3b412c5ddbe2ad6c"
+    },
+    {
+      "bytes": 2257,
+      "path": "src/workforce/sql/features.sql",
+      "sha256": "ba96af5fd889ccd8c8a41e8e7a12c6b515e73f2ee66e697492ba26b80c2ab5e4"
+    },
+    {
+      "bytes": 1251,
+      "path": "src/workforce/storage.py",
+      "sha256": "5cc0070352ae24a1eea417264ba1d7362e50b0c32fb22543c363f37ee08fcccc"
+    },
+    {
+      "bytes": 3117,
+      "path": "src/workforce/validation.py",
+      "sha256": "5ab360722805ae40d2feb6621d78a3cfe9b6865caeb39728d05b1315ae207e39"
+    }
+  ],
+  "generation": "1789288344608427",
+  "key": "source/62de3f7484eb3e516a9077471f5d483eb0c6377889c75cc53b67a7957bd8d7c5.tar.gz",
+  "sha256": "62de3f7484eb3e516a9077471f5d483eb0c6377889c75cc53b67a7957bd8d7c5"
+}

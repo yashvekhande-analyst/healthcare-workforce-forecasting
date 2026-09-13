@@ -6,7 +6,7 @@ SELECT f.dataset_version, f.model, f.model_version,
        AVG(ABS(f.prediction - o.actual)) AS mae_hours,
        SAFE_DIVIDE(SUM(ABS(f.prediction - o.actual)), SUM(ABS(o.actual))) AS wape,
        AVG(f.prediction - o.actual) AS signed_error_hours,
-       AVG(IF(o.actual IS NULL, NULL, CAST(o.actual BETWEEN f.lower AND f.upper AS FLOAT64))) AS coverage,
+       AVG(IF(o.actual IS NULL, NULL, CAST(o.actual BETWEEN f.lower AND f.upper AS INT64))) AS coverage,
        AVG(IF(o.actual IS NULL, NULL, f.upper - f.lower)) AS mean_width_hours
 FROM `{{PROJECT}}.{{DATASET}}.forecasts_{{TABLE_TAG}}` f
 LEFT JOIN `{{PROJECT}}.{{DATASET}}.outcomes_{{TABLE_TAG}}` o

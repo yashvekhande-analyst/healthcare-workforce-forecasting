@@ -1,0 +1,113 @@
+{
+  "apiVersion": "run.googleapis.com/v1",
+  "kind": "Job",
+  "metadata": {
+    "annotations": {
+      "run.googleapis.com/client-name": "gcloud",
+      "run.googleapis.com/client-version": "584.0.0",
+      "run.googleapis.com/operation-id": "9f6e5a2b-5a3d-49de-a22d-b3d77f624cb7"
+    },
+    "creationTimestamp": "2026-09-13T08:38:38.744273Z",
+    "generation": 1,
+    "labels": {
+      "cloud.googleapis.com/location": "us-central1",
+      "portfolio": "workforce",
+      "run.googleapis.com/lastUpdatedTime": "2026-09-13T08:38:38.744273Z"
+    },
+    "name": "workforce-replay-batch",
+    "namespace": "260594395044",
+    "resourceVersion": "AAZbWWgBd7w",
+    "selfLink": "/apis/run.googleapis.com/v1/namespaces/260594395044/jobs/workforce-replay-batch",
+    "uid": "fb354e61-743d-4cd0-95b8-eecaa43a97c0"
+  },
+  "spec": {
+    "template": {
+      "metadata": {
+        "annotations": {
+          "run.googleapis.com/client-name": "gcloud",
+          "run.googleapis.com/client-version": "584.0.0",
+          "run.googleapis.com/execution-environment": "gen2"
+        },
+        "labels": {
+          "client.knative.dev/nonce": "zoj_rom_cem",
+          "portfolio": "workforce"
+        }
+      },
+      "spec": {
+        "parallelism": 1,
+        "taskCount": 1,
+        "template": {
+          "spec": {
+            "containers": [
+              {
+                "args": [
+                  "-m",
+                  "workforce.cloud_job"
+                ],
+                "command": [
+                  "python"
+                ],
+                "env": [
+                  {
+                    "name": "INPUT_BUCKET",
+                    "value": "workforce-replay-yv-260913-wf-input"
+                  },
+                  {
+                    "name": "OUTPUT_BUCKET",
+                    "value": "workforce-replay-yv-260913-wf-output"
+                  },
+                  {
+                    "name": "INPUT_PREFIX",
+                    "value": "releases/cms-ny50-c1b7f9939a74d3d1-v1"
+                  },
+                  {
+                    "name": "INPUT_MANIFEST_SHA256",
+                    "value": "e92a44c60ade1871ca4e70889997d79f49b81b50b4a775fa7606bcca588d229a"
+                  },
+                  {
+                    "name": "ORIGIN",
+                    "value": "2026-03-24"
+                  },
+                  {
+                    "name": "ASOF",
+                    "value": "2026-03-31"
+                  },
+                  {
+                    "name": "OUTPUT_PREFIX",
+                    "value": "runs"
+                  }
+                ],
+                "image": "us-central1-docker.pkg.dev/workforce-replay-yv-260913/workforce/runtime@sha256:840702f92e799ff0db8144a1ceeaa18fbdefe079b6bd9fe3db35b02b0fc37a76",
+                "resources": {
+                  "limits": {
+                    "cpu": "1",
+                    "memory": "1Gi"
+                  }
+                }
+              }
+            ],
+            "maxRetries": 1,
+            "serviceAccountName": "workforce-runner@workforce-replay-yv-260913.iam.gserviceaccount.com",
+            "timeoutSeconds": "600"
+          }
+        }
+      }
+    }
+  },
+  "status": {
+    "conditions": [
+      {
+        "status": "True",
+        "type": "Ready"
+      }
+    ],
+    "executionCount": 3,
+    "latestCreatedExecution": {
+      "completionStatus": "EXECUTION_FAILED",
+      "completionTimestamp": "2026-09-13T08:50:13.294716Z",
+      "creationTimestamp": "2026-09-13T08:46:18.910894Z",
+      "name": "workforce-replay-batch-4xx6b"
+    },
+    "observedGeneration": 1
+  }
+}

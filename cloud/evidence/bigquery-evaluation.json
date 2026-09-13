@@ -1,0 +1,59 @@
+{
+  "dry_run_bytes": 3752755,
+  "job_id": "workforce_evaluation_fc07d64290824f7f",
+  "location": "us-central1",
+  "maximum_bytes_billed": 1073741824,
+  "rows": [
+    {
+      "coverage": 0.8419168591224016,
+      "dataset_version": "cms-ny50-c1b7f9939a74d3d1-v1",
+      "issued_forecasts": 8667,
+      "mae_hours": 39.91224619565292,
+      "mean_width_hours": 384.71885983158745,
+      "model": "gradient_boosted",
+      "model_version": "c1b7f9939a74d3d1-gradient_boosted",
+      "n": 8660,
+      "signed_error_hours": -1.3341939012836939,
+      "unknown_outcomes": 7,
+      "wape": 0.07346458973286996
+    },
+    {
+      "coverage": 0.8622401847575059,
+      "dataset_version": "cms-ny50-c1b7f9939a74d3d1-v1",
+      "issued_forecasts": 8667,
+      "mae_hours": 39.59393187066974,
+      "mean_width_hours": 398.0302437163906,
+      "model": "previous_7",
+      "model_version": "c1b7f9939a74d3d1-previous_7",
+      "n": 8660,
+      "signed_error_hours": 1.1674722863741351,
+      "unknown_outcomes": 7,
+      "wape": 0.07287868356321084
+    },
+    {
+      "coverage": 0.8645496535796765,
+      "dataset_version": "cms-ny50-c1b7f9939a74d3d1-v1",
+      "issued_forecasts": 8667,
+      "mae_hours": 40.690766743648965,
+      "mean_width_hours": 436.53980302611694,
+      "model": "trailing_28",
+      "model_version": "c1b7f9939a74d3d1-trailing_28",
+      "n": 8660,
+      "signed_error_hours": 3.508737875288685,
+      "unknown_outcomes": 7,
+      "wape": 0.07489757579876988
+    }
+  ],
+  "statistics": {
+    "creationTime": "1789288396820",
+    "startTime": "1789288397073",
+    "endTime": "1789288397490",
+    "totalBytesProcessed": "3752755",
+    "query": {
+      "totalBytesBilled": "20971520",
+      "totalBytesProcessed": "3752755",
+      "totalSlotMs": "7295",
+      "cacheHit": false
+    }
+  }
+}

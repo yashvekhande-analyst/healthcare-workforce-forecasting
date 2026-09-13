@@ -1,0 +1,81 @@
+{
+  "id": "bd03bdeb-55d2-4f32-891a-f471fbe49094",
+  "status": "SUCCESS",
+  "startTime": "2026-09-13T08:33:05.996804962Z",
+  "finishTime": "2026-09-13T08:36:27.837189Z",
+  "source": {
+    "storageSource": {
+      "bucket": "workforce-replay-yv-260913-wf-build",
+      "generation": "1789288384347641",
+      "object": "source/1789288383.994188-356c1e14f1d64fc4b4cd8f56e80eb20e.gz"
+    }
+  },
+  "serviceAccount": "projects/workforce-replay-yv-260913/serviceAccounts/workforce-builder@workforce-replay-yv-260913.iam.gserviceaccount.com",
+  "options": {
+    "logging": "CLOUD_LOGGING_ONLY",
+    "machineType": "E2_STANDARD_2",
+    "pool": {}
+  },
+  "results": {
+    "buildStepImages": [
+      "sha256:2e8d40d8e48dc14fab4213d5e532d74f63fd403d9e8d7f6463096a75820286c3",
+      "sha256:2e8d40d8e48dc14fab4213d5e532d74f63fd403d9e8d7f6463096a75820286c3"
+    ],
+    "buildStepOutputs": [
+      "",
+      ""
+    ],
+    "images": [
+      {
+        "artifactRegistryPackage": "projects/workforce-replay-yv-260913/locations/us-central1/repositories/workforce/packages/runtime/versions/sha256:840702f92e799ff0db8144a1ceeaa18fbdefe079b6bd9fe3db35b02b0fc37a76",
+        "digest": "sha256:840702f92e799ff0db8144a1ceeaa18fbdefe079b6bd9fe3db35b02b0fc37a76",
+        "name": "us-central1-docker.pkg.dev/workforce-replay-yv-260913/workforce/runtime:cloud-v1",
+        "pushTiming": {
+          "endTime": "2026-09-13T08:36:25.745214272Z",
+          "startTime": "2026-09-13T08:35:12.705284948Z"
+        }
+      }
+    ]
+  },
+  "steps": [
+    {
+      "args": [
+        "build",
+        "-t",
+        "us-central1-docker.pkg.dev/workforce-replay-yv-260913/workforce/runtime:cloud-v1",
+        "."
+      ],
+      "name": "gcr.io/cloud-builders/docker",
+      "pullTiming": {
+        "endTime": "2026-09-13T08:33:07.011001379Z",
+        "startTime": "2026-09-13T08:33:06.996990754Z"
+      },
+      "status": "SUCCESS",
+      "timing": {
+        "endTime": "2026-09-13T08:35:05.912109959Z",
+        "startTime": "2026-09-13T08:33:06.996990754Z"
+      }
+    },
+    {
+      "args": [
+        "run",
+        "--rm",
+        "--entrypoint",
+        "python",
+        "us-central1-docker.pkg.dev/workforce-replay-yv-260913/workforce/runtime:cloud-v1",
+        "-c",
+        "import workforce.cloud_job; import workforce.cloud_dashboard; import streamlit; print(\"Container imports passed\")"
+      ],
+      "name": "gcr.io/cloud-builders/docker",
+      "pullTiming": {
+        "endTime": "2026-09-13T08:35:05.914770633Z",
+        "startTime": "2026-09-13T08:35:05.912432394Z"
+      },
+      "status": "SUCCESS",
+      "timing": {
+        "endTime": "2026-09-13T08:35:12.671099342Z",
+        "startTime": "2026-09-13T08:35:05.912432394Z"
+      }
+    }
+  ]
+}

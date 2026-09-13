@@ -1,0 +1,116 @@
+[
+  {
+    "timestamp": "2026-09-13T08:50:08.019068Z",
+    "resource": {
+      "labels": {
+        "job_name": "workforce-replay-batch",
+        "location": "us-central1",
+        "project_id": "workforce-replay-yv-260913"
+      },
+      "type": "cloud_run_job"
+    },
+    "attempt": 1,
+    "error_type": "FileNotFoundError",
+    "event": "replay_failed",
+    "execution": "workforce-replay-batch-4xx6b",
+    "message": "Missing input/object: gs://workforce-replay-yv-260913-wf-input/tests/intentionally-missing/job-input.json"
+  },
+  {
+    "timestamp": "2026-09-13T08:47:25.384119Z",
+    "resource": {
+      "labels": {
+        "job_name": "workforce-replay-batch",
+        "location": "us-central1",
+        "project_id": "workforce-replay-yv-260913"
+      },
+      "type": "cloud_run_job"
+    },
+    "attempt": 0,
+    "error_type": "FileNotFoundError",
+    "event": "replay_failed",
+    "execution": "workforce-replay-batch-4xx6b",
+    "message": "Missing input/object: gs://workforce-replay-yv-260913-wf-input/tests/intentionally-missing/job-input.json"
+  },
+  {
+    "timestamp": "2026-09-13T08:44:20.645218Z",
+    "resource": {
+      "labels": {
+        "job_name": "workforce-replay-batch",
+        "location": "us-central1",
+        "project_id": "workforce-replay-yv-260913"
+      },
+      "type": "cloud_run_job"
+    },
+    "artifact_id": "062681b80786c707cca1aed1",
+    "attempt": 0,
+    "evaluable": 49,
+    "event": "replay_success",
+    "execution": "workforce-replay-batch-2jvdc",
+    "issued": 49,
+    "metrics": {
+      "absolute_error_sum": 1971.8999999999999,
+      "actual_hours_sum": 27010.22,
+      "coverage": 0.8571428571428571,
+      "mae_hours": 40.24285714285714,
+      "mean_width_hours": 395.689259645464,
+      "n": 49,
+      "signed_error_hours": -9.981632653061228,
+      "wape": 0.07300569932418173
+    },
+    "output_keys": [
+      "runs/cms-ny50-c1b7f9939a74d3d1-v1/062681b80786c707cca1aed1/predictions.parquet",
+      "runs/cms-ny50-c1b7f9939a74d3d1-v1/062681b80786c707cca1aed1/actuals.parquet",
+      "runs/cms-ny50-c1b7f9939a74d3d1-v1/062681b80786c707cca1aed1/report.json"
+    ]
+  },
+  {
+    "timestamp": "2026-09-13T08:40:07.142355Z",
+    "resource": {
+      "labels": {
+        "job_name": "workforce-replay-batch",
+        "location": "us-central1",
+        "project_id": "workforce-replay-yv-260913"
+      },
+      "type": "cloud_run_job"
+    },
+    "artifact_id": "062681b80786c707cca1aed1",
+    "attempt": 0,
+    "evaluable": 49,
+    "event": "replay_success",
+    "execution": "workforce-replay-batch-hts2t",
+    "issued": 49,
+    "metrics": {
+      "absolute_error_sum": 1971.8999999999999,
+      "actual_hours_sum": 27010.22,
+      "coverage": 0.8571428571428571,
+      "mae_hours": 40.24285714285714,
+      "mean_width_hours": 395.689259645464,
+      "n": 49,
+      "signed_error_hours": -9.981632653061228,
+      "wape": 0.07300569932418173
+    },
+    "output_keys": [
+      "runs/cms-ny50-c1b7f9939a74d3d1-v1/062681b80786c707cca1aed1/predictions.parquet",
+      "runs/cms-ny50-c1b7f9939a74d3d1-v1/062681b80786c707cca1aed1/actuals.parquet",
+      "runs/cms-ny50-c1b7f9939a74d3d1-v1/062681b80786c707cca1aed1/report.json"
+    ]
+  },
+  {
+    "timestamp": "2026-09-13T08:38:27.307451Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "workforce-replay",
+        "location": "us-central1",
+        "project_id": "workforce-replay-yv-260913",
+        "revision_name": "workforce-replay-00001-lcp",
+        "service_name": "workforce-replay"
+      },
+      "type": "cloud_run_revision"
+    },
+    "dataset_version": "cms-ny50-c1b7f9939a74d3d1-v1",
+    "event": "dashboard_artifacts_verified",
+    "model_version": "c1b7f9939a74d3d1",
+    "mount_read_only": true,
+    "verified_files": 17
+  }
+]

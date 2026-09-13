@@ -12,7 +12,7 @@
 
 **2:00–2:30 — Monitoring and reliability.** Open Data quality & monitoring. Show the real stale-history alert, then enable the labeled TEST SCENARIO. “This injected missing inputs, stale dates, drift and a failed job into copies. It did not alter the source, model or immutable forecasts. Alerts prompt investigation; they do not automatically retrain.”
 
-**2:30–3:00 — Engineering and next steps.** “The installable Python package uses DuckDB SQL and Parquet, chronological training cutoffs, separate interval calibration, saved-model prediction, immutable forecast records and later outcome attachment. Tests cover leakage, target windows, persistence and the end-to-end path. Cloud Run, Cloud Storage and BigQuery deployment are prepared but not deployed. Prospective feed availability and facility-specific performance would be the next validation steps.”
+**2:30–3:00 — Engineering and next steps.** “The installable Python package uses DuckDB SQL and Parquet, chronological training cutoffs, separate interval calibration, saved-model prediction, immutable forecast records and later outcome attachment. Tests cover leakage, target windows, persistence and the end-to-end path. The public Cloud Run dashboard is deployed, private Cloud Storage access is verified, and BigQuery reconciles all three model benchmarks. A bounded historical Cloud Run job succeeded, repeated safely, and exposed an intentional missing-input failure in Cloud Logging. Prospective feed availability and facility-specific performance remain future validation work.” See [actual cloud evidence](GCP_VERIFICATION.md).
 
 ## Screenshot walkthrough
 

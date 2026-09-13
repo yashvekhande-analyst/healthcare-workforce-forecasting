@@ -1,0 +1,36 @@
+{
+  "status": "pass",
+  "first_execution": "workforce-replay-batch-hts2t",
+  "repeat_execution": "workforce-replay-batch-2jvdc",
+  "unchanged_output_objects": {
+    "runs/cms-ny50-c1b7f9939a74d3d1-v1/062681b80786c707cca1aed1/actuals.parquet": {
+      "generation": "1789288806720581",
+      "size": "4698",
+      "md5Hash": "+0m4i3KIvMB5OMsoGeI7Vg==",
+      "crc32c": "Frxgrg=="
+    },
+    "runs/cms-ny50-c1b7f9939a74d3d1-v1/062681b80786c707cca1aed1/predictions.parquet": {
+      "generation": "1789288806616988",
+      "size": "13138",
+      "md5Hash": "p4OkFoRsZIo9zYFB76sHQg==",
+      "crc32c": "QgTQwQ=="
+    },
+    "runs/cms-ny50-c1b7f9939a74d3d1-v1/062681b80786c707cca1aed1/report.json": {
+      "generation": "1789288806919281",
+      "size": "1033",
+      "md5Hash": "u4VN01i2memJyqi0mgt/Ew==",
+      "crc32c": "F6Yfig=="
+    },
+    "runs/executions/workforce-replay-batch-hts2t/attempt-0.json": {
+      "generation": "1789288807119770",
+      "size": "778",
+      "md5Hash": "tfQVmptkXS/9zA+sSq5+Lw==",
+      "crc32c": "JA03tg=="
+    }
+  },
+  "new_receipts": [
+    "runs/executions/workforce-replay-batch-2jvdc/attempt-0.json"
+  ],
+  "dashboard_object_versions_unchanged": true,
+  "input_object_versions_unchanged": true
+}

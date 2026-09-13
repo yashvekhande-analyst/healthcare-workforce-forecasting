@@ -1,0 +1,17 @@
+[
+  {
+    "createTime": "2026-09-13T08:36:27.270159Z",
+    "metadata": {
+      "buildTime": "2026-09-13T08:35:05.592860619Z",
+      "imageSizeBytes": "304422754",
+      "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+      "name": "projects/workforce-replay-yv-260913/locations/us-central1/repositories/workforce/dockerImages/runtime@sha256:840702f92e799ff0db8144a1ceeaa18fbdefe079b6bd9fe3db35b02b0fc37a76"
+    },
+    "package": "us-central1-docker.pkg.dev/workforce-replay-yv-260913/workforce/runtime",
+    "tags": [
+      "cloud-v1"
+    ],
+    "updateTime": "2026-09-13T08:36:27.270159Z",
+    "version": "sha256:840702f92e799ff0db8144a1ceeaa18fbdefe079b6bd9fe3db35b02b0fc37a76"
+  }
+]

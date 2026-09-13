@@ -1,0 +1,50 @@
+{
+  "status": "pass",
+  "rows": 49,
+  "separate_predictions_actuals": true,
+  "matches_frozen_march24_forecast": true,
+  "files": {
+    "predictions.parquet": {
+      "bytes": 13138,
+      "sha256": "72fe024ba7d5793d52e2aea41c9a849371e5f7b9baa42f9c86306780362464bf"
+    },
+    "actuals.parquet": {
+      "bytes": 4698,
+      "sha256": "b009f4223daec7a1776205ba9492208960c3d84539d9371f03d76a20057cac0d"
+    },
+    "report.json": {
+      "bytes": 1033,
+      "sha256": "a2bab76f7395cede5b372948175b07977bf57731fd939c85b98428b4104c704c"
+    }
+  },
+  "report": {
+    "artifact_id": "062681b80786c707cca1aed1",
+    "asof": "2026-03-31",
+    "availability_assumption": "Historical replay with daily internal feed through origin; CMS publishes quarterly",
+    "contract": "cloud-replay-v1",
+    "dataset_version": "cms-ny50-c1b7f9939a74d3d1-v1",
+    "evaluable_forecasts": 49,
+    "historical_replay": true,
+    "input_manifest_sha256": "e92a44c60ade1871ca4e70889997d79f49b81b50b4a775fa7606bcca588d229a",
+    "issued_forecasts": 49,
+    "metrics": {
+      "absolute_error_sum": 1971.8999999999999,
+      "actual_hours_sum": 27010.22,
+      "coverage": 0.8571428571428571,
+      "mae_hours": 40.24285714285714,
+      "mean_width_hours": 395.689259645464,
+      "n": 49,
+      "signed_error_hours": -9.981632653061228,
+      "wape": 0.07300569932418173
+    },
+    "model_version": "c1b7f9939a74d3d1-previous_7",
+    "monitoring": {
+      "coverage_below_80_percent": false,
+      "incomplete_forecast_cohort": true
+    },
+    "origin": "2026-03-24",
+    "prediction_input_max_date": "2026-03-24",
+    "unknown_outcomes": 0,
+    "withheld_facilities": 1
+  }
+}

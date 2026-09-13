@@ -1,0 +1,526 @@
+[
+  {
+    "name": "workforce-replay-yv-260913-wf-view",
+    "location": "US-CENTRAL1",
+    "versioning": {
+      "enabled": true
+    },
+    "lifecycle": {
+      "rule": [
+        {
+          "action": {
+            "type": "Delete"
+          },
+          "condition": {
+            "numNewerVersions": 1,
+            "daysSinceNoncurrentTime": 7
+          }
+        }
+      ]
+    },
+    "iam_configuration": {
+      "bucketPolicyOnly": {
+        "enabled": true,
+        "lockedTime": "2026-12-12T08:25:17.848Z"
+      },
+      "uniformBucketLevelAccess": {
+        "enabled": true,
+        "lockedTime": "2026-12-12T08:25:17.848Z"
+      },
+      "publicAccessPrevention": "enforced"
+    },
+    "soft_delete_policy": {
+      "retentionDurationSeconds": "604800",
+      "effectiveTime": "2026-09-13T08:25:17.848Z"
+    },
+    "iam": {
+      "kind": "storage#policy",
+      "resourceId": "projects/_/buckets/workforce-replay-yv-260913-wf-view",
+      "version": 1,
+      "etag": "CAM=",
+      "bindings": [
+        {
+          "role": "roles/storage.legacyBucketOwner",
+          "members": [
+            "projectEditor:workforce-replay-yv-260913",
+            "projectOwner:workforce-replay-yv-260913"
+          ]
+        },
+        {
+          "role": "roles/storage.legacyBucketReader",
+          "members": [
+            "projectViewer:workforce-replay-yv-260913"
+          ]
+        },
+        {
+          "role": "roles/storage.legacyObjectOwner",
+          "members": [
+            "projectEditor:workforce-replay-yv-260913",
+            "projectOwner:workforce-replay-yv-260913"
+          ]
+        },
+        {
+          "role": "roles/storage.legacyObjectReader",
+          "members": [
+            "projectViewer:workforce-replay-yv-260913"
+          ]
+        },
+        {
+          "role": "roles/storage.objectViewer",
+          "members": [
+            "serviceAccount:workforce-viewer@workforce-replay-yv-260913.iam.gserviceaccount.com"
+          ]
+        }
+      ]
+    },
+    "objects": [
+      {
+        "name": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/backtest_summary.json",
+        "generation": "1789288212912695",
+        "bytes": 1627,
+        "crc32c": "pJ+xvA=="
+      },
+      {
+        "name": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/daily.parquet",
+        "generation": "1789288213458053",
+        "bytes": 457605,
+        "crc32c": "uI7yww=="
+      },
+      {
+        "name": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/evaluation.parquet",
+        "generation": "1789288214105459",
+        "bytes": 519894,
+        "crc32c": "xWXhxw=="
+      },
+      {
+        "name": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/facilities.parquet",
+        "generation": "1789288214484877",
+        "bytes": 11872,
+        "crc32c": "P056MA=="
+      },
+      {
+        "name": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/forecasts/c1b7f9939a74d3d1/2026-03-24.parquet",
+        "generation": "1789288214732179",
+        "bytes": 11800,
+        "crc32c": "iycdQw=="
+      },
+      {
+        "name": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/forecasts/c1b7f9939a74d3d1/2026-03-31.parquet",
+        "generation": "1789288214993643",
+        "bytes": 11820,
+        "crc32c": "rSJZaA=="
+      },
+      {
+        "name": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/models/metadata.json",
+        "generation": "1789288215233096",
+        "bytes": 5817,
+        "crc32c": "+PivaA=="
+      },
+      {
+        "name": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/monitoring.json",
+        "generation": "1789288215498026",
+        "bytes": 1165,
+        "crc32c": "ItoGfw=="
+      },
+      {
+        "name": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/monitoring_demo.json",
+        "generation": "1789288215739651",
+        "bytes": 1892,
+        "crc32c": "jOusmg=="
+      },
+      {
+        "name": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/quality.json",
+        "generation": "1789288215987293",
+        "bytes": 17366,
+        "crc32c": "yIpsaw=="
+      },
+      {
+        "name": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/reports/facility_metrics.csv",
+        "generation": "1789288216246134",
+        "bytes": 22445,
+        "crc32c": "uRrAnQ=="
+      },
+      {
+        "name": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/reports/quarter_coverage.csv",
+        "generation": "1789288216490676",
+        "bytes": 217,
+        "crc32c": "/kNmhA=="
+      },
+      {
+        "name": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/reports/representative_failures.csv",
+        "generation": "1789288216746687",
+        "bytes": 3663,
+        "crc32c": "ZpoDqg=="
+      },
+      {
+        "name": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/reports/test_metrics.csv",
+        "generation": "1789288216984971",
+        "bytes": 639,
+        "crc32c": "P6i/Mg=="
+      },
+      {
+        "name": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/reports/volume_metrics.csv",
+        "generation": "1789288217221165",
+        "bytes": 1752,
+        "crc32c": "c8OrIA=="
+      },
+      {
+        "name": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/test_forecasts.parquet",
+        "generation": "1789288217695940",
+        "bytes": 482216,
+        "crc32c": "RNdP8w=="
+      },
+      {
+        "name": "releases/cms-ny50-c1b7f9939a74d3d1-v1/inventory.json",
+        "generation": "1789288218352781",
+        "bytes": 3462,
+        "crc32c": "i+rtfQ=="
+      },
+      {
+        "name": "releases/cms-ny50-c1b7f9939a74d3d1-v1/source-manifest.json",
+        "generation": "1789288218040922",
+        "bytes": 128719,
+        "crc32c": "KLU+lQ=="
+      }
+    ]
+  },
+  {
+    "name": "workforce-replay-yv-260913-wf-input",
+    "location": "US-CENTRAL1",
+    "versioning": {
+      "enabled": true
+    },
+    "lifecycle": {
+      "rule": [
+        {
+          "action": {
+            "type": "Delete"
+          },
+          "condition": {
+            "numNewerVersions": 1,
+            "daysSinceNoncurrentTime": 7
+          }
+        }
+      ]
+    },
+    "iam_configuration": {
+      "bucketPolicyOnly": {
+        "enabled": true,
+        "lockedTime": "2026-12-12T08:27:00.830Z"
+      },
+      "uniformBucketLevelAccess": {
+        "enabled": true,
+        "lockedTime": "2026-12-12T08:27:00.830Z"
+      },
+      "publicAccessPrevention": "enforced"
+    },
+    "soft_delete_policy": {
+      "retentionDurationSeconds": "604800",
+      "effectiveTime": "2026-09-13T08:27:00.830Z"
+    },
+    "iam": {
+      "kind": "storage#policy",
+      "resourceId": "projects/_/buckets/workforce-replay-yv-260913-wf-input",
+      "version": 1,
+      "etag": "CAM=",
+      "bindings": [
+        {
+          "role": "roles/storage.legacyBucketOwner",
+          "members": [
+            "projectEditor:workforce-replay-yv-260913",
+            "projectOwner:workforce-replay-yv-260913"
+          ]
+        },
+        {
+          "role": "roles/storage.legacyBucketReader",
+          "members": [
+            "projectViewer:workforce-replay-yv-260913"
+          ]
+        },
+        {
+          "role": "roles/storage.legacyObjectOwner",
+          "members": [
+            "projectEditor:workforce-replay-yv-260913",
+            "projectOwner:workforce-replay-yv-260913"
+          ]
+        },
+        {
+          "role": "roles/storage.legacyObjectReader",
+          "members": [
+            "projectViewer:workforce-replay-yv-260913"
+          ]
+        },
+        {
+          "role": "roles/storage.objectViewer",
+          "members": [
+            "serviceAccount:workforce-runner@workforce-replay-yv-260913.iam.gserviceaccount.com"
+          ]
+        }
+      ]
+    },
+    "objects": [
+      {
+        "name": "releases/cms-ny50-c1b7f9939a74d3d1-v1/bigquery/daily.parquet",
+        "generation": "1789288218867093",
+        "bytes": 450385,
+        "crc32c": "v82k3A=="
+      },
+      {
+        "name": "releases/cms-ny50-c1b7f9939a74d3d1-v1/bigquery/forecasts.parquet",
+        "generation": "1789288219513900",
+        "bytes": 475316,
+        "crc32c": "N44aYQ=="
+      },
+      {
+        "name": "releases/cms-ny50-c1b7f9939a74d3d1-v1/bigquery/outcomes.parquet",
+        "generation": "1789288219924361",
+        "bytes": 35024,
+        "crc32c": "T8j8kw=="
+      },
+      {
+        "name": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/daily.parquet",
+        "generation": "1789288220397373",
+        "bytes": 457605,
+        "crc32c": "uI7yww=="
+      },
+      {
+        "name": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/features.parquet",
+        "generation": "1789288221635060",
+        "bytes": 1825055,
+        "crc32c": "bgWmbg=="
+      },
+      {
+        "name": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/models/bundle.joblib",
+        "generation": "1789288222225338",
+        "bytes": 211285,
+        "crc32c": "5GCNIg=="
+      },
+      {
+        "name": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/models/metadata.json",
+        "generation": "1789288222617509",
+        "bytes": 5817,
+        "crc32c": "+PivaA=="
+      },
+      {
+        "name": "releases/cms-ny50-c1b7f9939a74d3d1-v1/inventory.json",
+        "generation": "1789288223216864",
+        "bytes": 1786,
+        "crc32c": "A0jcJA=="
+      },
+      {
+        "name": "releases/cms-ny50-c1b7f9939a74d3d1-v1/job-input.json",
+        "generation": "1789288223436870",
+        "bytes": 814,
+        "crc32c": "jLihHg=="
+      },
+      {
+        "name": "releases/cms-ny50-c1b7f9939a74d3d1-v1/source-manifest.json",
+        "generation": "1789288222912023",
+        "bytes": 128719,
+        "crc32c": "KLU+lQ=="
+      }
+    ]
+  },
+  {
+    "name": "workforce-replay-yv-260913-wf-output",
+    "location": "US-CENTRAL1",
+    "versioning": {
+      "enabled": true
+    },
+    "lifecycle": {
+      "rule": [
+        {
+          "action": {
+            "type": "Delete"
+          },
+          "condition": {
+            "numNewerVersions": 1,
+            "daysSinceNoncurrentTime": 7
+          }
+        }
+      ]
+    },
+    "iam_configuration": {
+      "bucketPolicyOnly": {
+        "enabled": true,
+        "lockedTime": "2026-12-12T08:27:11.619Z"
+      },
+      "uniformBucketLevelAccess": {
+        "enabled": true,
+        "lockedTime": "2026-12-12T08:27:11.619Z"
+      },
+      "publicAccessPrevention": "enforced"
+    },
+    "soft_delete_policy": {
+      "retentionDurationSeconds": "604800",
+      "effectiveTime": "2026-09-13T08:27:11.619Z"
+    },
+    "iam": {
+      "kind": "storage#policy",
+      "resourceId": "projects/_/buckets/workforce-replay-yv-260913-wf-output",
+      "version": 1,
+      "etag": "CAQ=",
+      "bindings": [
+        {
+          "role": "roles/storage.legacyBucketOwner",
+          "members": [
+            "projectEditor:workforce-replay-yv-260913",
+            "projectOwner:workforce-replay-yv-260913"
+          ]
+        },
+        {
+          "role": "roles/storage.legacyBucketReader",
+          "members": [
+            "projectViewer:workforce-replay-yv-260913"
+          ]
+        },
+        {
+          "role": "roles/storage.legacyObjectOwner",
+          "members": [
+            "projectEditor:workforce-replay-yv-260913",
+            "projectOwner:workforce-replay-yv-260913"
+          ]
+        },
+        {
+          "role": "roles/storage.legacyObjectReader",
+          "members": [
+            "projectViewer:workforce-replay-yv-260913"
+          ]
+        },
+        {
+          "role": "roles/storage.objectCreator",
+          "members": [
+            "serviceAccount:workforce-runner@workforce-replay-yv-260913.iam.gserviceaccount.com"
+          ]
+        },
+        {
+          "role": "roles/storage.objectViewer",
+          "members": [
+            "serviceAccount:workforce-runner@workforce-replay-yv-260913.iam.gserviceaccount.com"
+          ]
+        }
+      ]
+    },
+    "objects": [
+      {
+        "name": "runs/cms-ny50-c1b7f9939a74d3d1-v1/062681b80786c707cca1aed1/actuals.parquet",
+        "generation": "1789288806720581",
+        "bytes": 4698,
+        "crc32c": "Frxgrg=="
+      },
+      {
+        "name": "runs/cms-ny50-c1b7f9939a74d3d1-v1/062681b80786c707cca1aed1/predictions.parquet",
+        "generation": "1789288806616988",
+        "bytes": 13138,
+        "crc32c": "QgTQwQ=="
+      },
+      {
+        "name": "runs/cms-ny50-c1b7f9939a74d3d1-v1/062681b80786c707cca1aed1/report.json",
+        "generation": "1789288806919281",
+        "bytes": 1033,
+        "crc32c": "F6Yfig=="
+      },
+      {
+        "name": "runs/executions/workforce-replay-batch-2jvdc/attempt-0.json",
+        "generation": "1789289060623564",
+        "bytes": 778,
+        "crc32c": "6o2JKQ=="
+      },
+      {
+        "name": "runs/executions/workforce-replay-batch-hts2t/attempt-0.json",
+        "generation": "1789288807119770",
+        "bytes": 778,
+        "crc32c": "JA03tg=="
+      }
+    ]
+  },
+  {
+    "name": "workforce-replay-yv-260913-wf-build",
+    "location": "US-CENTRAL1",
+    "versioning": {
+      "enabled": true
+    },
+    "lifecycle": {
+      "rule": [
+        {
+          "action": {
+            "type": "Delete"
+          },
+          "condition": {
+            "numNewerVersions": 1,
+            "daysSinceNoncurrentTime": 7
+          }
+        }
+      ]
+    },
+    "iam_configuration": {
+      "bucketPolicyOnly": {
+        "enabled": true,
+        "lockedTime": "2026-12-12T08:27:22.616Z"
+      },
+      "uniformBucketLevelAccess": {
+        "enabled": true,
+        "lockedTime": "2026-12-12T08:27:22.616Z"
+      },
+      "publicAccessPrevention": "enforced"
+    },
+    "soft_delete_policy": {
+      "retentionDurationSeconds": "604800",
+      "effectiveTime": "2026-09-13T08:27:22.616Z"
+    },
+    "iam": {
+      "kind": "storage#policy",
+      "resourceId": "projects/_/buckets/workforce-replay-yv-260913-wf-build",
+      "version": 1,
+      "etag": "CAM=",
+      "bindings": [
+        {
+          "role": "roles/storage.legacyBucketOwner",
+          "members": [
+            "projectEditor:workforce-replay-yv-260913",
+            "projectOwner:workforce-replay-yv-260913"
+          ]
+        },
+        {
+          "role": "roles/storage.legacyBucketReader",
+          "members": [
+            "projectViewer:workforce-replay-yv-260913"
+          ]
+        },
+        {
+          "role": "roles/storage.legacyObjectOwner",
+          "members": [
+            "projectEditor:workforce-replay-yv-260913",
+            "projectOwner:workforce-replay-yv-260913"
+          ]
+        },
+        {
+          "role": "roles/storage.legacyObjectReader",
+          "members": [
+            "projectViewer:workforce-replay-yv-260913"
+          ]
+        },
+        {
+          "role": "roles/storage.objectViewer",
+          "members": [
+            "serviceAccount:workforce-builder@workforce-replay-yv-260913.iam.gserviceaccount.com"
+          ]
+        }
+      ]
+    },
+    "objects": [
+      {
+        "name": "source/1789288383.994188-356c1e14f1d64fc4b4cd8f56e80eb20e.gz",
+        "generation": "1789288384347641",
+        "bytes": 3585439,
+        "crc32c": "hSrTVw=="
+      },
+      {
+        "name": "source/62de3f7484eb3e516a9077471f5d483eb0c6377889c75cc53b67a7957bd8d7c5.tar.gz",
+        "generation": "1789288344608427",
+        "bytes": 3585439,
+        "crc32c": "hSrTVw=="
+      }
+    ]
+  }
+]

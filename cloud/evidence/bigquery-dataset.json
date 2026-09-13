@@ -1,0 +1,8 @@
+{
+  "datasetReference": {
+    "datasetId": "workforce_demo",
+    "projectId": "workforce-replay-yv-260913"
+  },
+  "location": "us-central1",
+  "defaultTableExpirationMs": "2592000000"
+}

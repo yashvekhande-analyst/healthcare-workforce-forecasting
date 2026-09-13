@@ -1,0 +1,17 @@
+{
+  "cloud_verified": true,
+  "region": "us-central1",
+  "image_digest": "sha256:840702f92e799ff0db8144a1ceeaa18fbdefe079b6bd9fe3db35b02b0fc37a76",
+  "build_id": "bd03bdeb-55d2-4f32-891a-f471fbe49094",
+  "dashboard_url": "https://workforce-replay-260594395044.us-central1.run.app",
+  "buckets": 4,
+  "current_gcs_objects": 35,
+  "gcs_bytes": 12467080,
+  "executions": {
+    "success": "workforce-replay-batch-hts2t",
+    "repeat": "workforce-replay-batch-2jvdc",
+    "failure": "workforce-replay-batch-4xx6b"
+  },
+  "maximum_metric_absolute_difference": 1.1368683772161603e-13,
+  "user_repeat_operation": "Guided query prepared in BigQuery; user execution not yet observed"
+}

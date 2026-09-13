@@ -1,0 +1,226 @@
+[
+  {
+    "bucket": "workforce-replay-yv-260913-wf-view",
+    "bytes": 1627,
+    "generation": "1789288212912695",
+    "key": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/backtest_summary.json",
+    "read_back_verified": true,
+    "sha256": "745d6d5e343db01f73eff6df4d00f6abb20c586d9c9dd06faf08682eb1e9a41f"
+  },
+  {
+    "bucket": "workforce-replay-yv-260913-wf-view",
+    "bytes": 457605,
+    "generation": "1789288213458053",
+    "key": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/daily.parquet",
+    "read_back_verified": true,
+    "sha256": "6069ca967da4613563f88dd96742d9559a89c3a784e80f36733c14a4e7da1259"
+  },
+  {
+    "bucket": "workforce-replay-yv-260913-wf-view",
+    "bytes": 519894,
+    "generation": "1789288214105459",
+    "key": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/evaluation.parquet",
+    "read_back_verified": true,
+    "sha256": "579d127ea3d27b7c2dc4eb43cec98fe3eb1d8ee66215e5d6517a08b5a856ad0d"
+  },
+  {
+    "bucket": "workforce-replay-yv-260913-wf-view",
+    "bytes": 11872,
+    "generation": "1789288214484877",
+    "key": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/facilities.parquet",
+    "read_back_verified": true,
+    "sha256": "d64d891d670fa9eee5cd506f9d4d17fd40ed414a730ae04ad14d127fea4c11c4"
+  },
+  {
+    "bucket": "workforce-replay-yv-260913-wf-view",
+    "bytes": 11800,
+    "generation": "1789288214732179",
+    "key": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/forecasts/c1b7f9939a74d3d1/2026-03-24.parquet",
+    "read_back_verified": true,
+    "sha256": "bc3c742d65df98695fba054aacbe30580edbf507e027fce35336b7e40d9ee328"
+  },
+  {
+    "bucket": "workforce-replay-yv-260913-wf-view",
+    "bytes": 11820,
+    "generation": "1789288214993643",
+    "key": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/forecasts/c1b7f9939a74d3d1/2026-03-31.parquet",
+    "read_back_verified": true,
+    "sha256": "51872d6ec6a9e728a5aa1128b1b9bc6c081d6d490cd65c64752a34b35db5b1d0"
+  },
+  {
+    "bucket": "workforce-replay-yv-260913-wf-view",
+    "bytes": 5817,
+    "generation": "1789288215233096",
+    "key": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/models/metadata.json",
+    "read_back_verified": true,
+    "sha256": "5c632fefbbaad29109039161b06824d38c629bb1e7bb64feac01555fe1965f08"
+  },
+  {
+    "bucket": "workforce-replay-yv-260913-wf-view",
+    "bytes": 1165,
+    "generation": "1789288215498026",
+    "key": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/monitoring.json",
+    "read_back_verified": true,
+    "sha256": "5ee37b6643aceb7159eda297160c978aaa8a13bc0103f12d903a9fb041831959"
+  },
+  {
+    "bucket": "workforce-replay-yv-260913-wf-view",
+    "bytes": 1892,
+    "generation": "1789288215739651",
+    "key": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/monitoring_demo.json",
+    "read_back_verified": true,
+    "sha256": "3cd2877c4319f1c962de7ae68cdb23fe2bed0f2d53d7c39a289a77c7e6b1c5e4"
+  },
+  {
+    "bucket": "workforce-replay-yv-260913-wf-view",
+    "bytes": 17366,
+    "generation": "1789288215987293",
+    "key": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/quality.json",
+    "read_back_verified": true,
+    "sha256": "ca6bf349df2ab0c77fc79fbeae8b0ce386673252fc8b45f64a79f4c51ed63f58"
+  },
+  {
+    "bucket": "workforce-replay-yv-260913-wf-view",
+    "bytes": 22445,
+    "generation": "1789288216246134",
+    "key": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/reports/facility_metrics.csv",
+    "read_back_verified": true,
+    "sha256": "fdcfe4fcb4f398aa585a69654a88cee4d53ca621cd920522d5d63814458d4aa1"
+  },
+  {
+    "bucket": "workforce-replay-yv-260913-wf-view",
+    "bytes": 217,
+    "generation": "1789288216490676",
+    "key": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/reports/quarter_coverage.csv",
+    "read_back_verified": true,
+    "sha256": "43aa5ca25f496f049e88ade350f972851af51bfb798316fd01d47026cac851e4"
+  },
+  {
+    "bucket": "workforce-replay-yv-260913-wf-view",
+    "bytes": 3663,
+    "generation": "1789288216746687",
+    "key": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/reports/representative_failures.csv",
+    "read_back_verified": true,
+    "sha256": "1c646b9f0fb4f991d6cd9ec3a11203b2e26c7c5817c8c0c5fc9f3aca9541e50e"
+  },
+  {
+    "bucket": "workforce-replay-yv-260913-wf-view",
+    "bytes": 639,
+    "generation": "1789288216984971",
+    "key": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/reports/test_metrics.csv",
+    "read_back_verified": true,
+    "sha256": "9aef63c44c35e8e2964544253fed1f0d628cdd2378d9647c732241917b63698f"
+  },
+  {
+    "bucket": "workforce-replay-yv-260913-wf-view",
+    "bytes": 1752,
+    "generation": "1789288217221165",
+    "key": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/reports/volume_metrics.csv",
+    "read_back_verified": true,
+    "sha256": "43c3293b2c18b2f7d1da8b3dfd84754f3a9f48a0c7cfbe714d85e2e7ac43c155"
+  },
+  {
+    "bucket": "workforce-replay-yv-260913-wf-view",
+    "bytes": 482216,
+    "generation": "1789288217695940",
+    "key": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/test_forecasts.parquet",
+    "read_back_verified": true,
+    "sha256": "ea2bb0d333a2aa8f01258428bdf6438e415e5454b092eb24d5b699a1c3c21ead"
+  },
+  {
+    "bucket": "workforce-replay-yv-260913-wf-view",
+    "bytes": 128719,
+    "generation": "1789288218040922",
+    "key": "releases/cms-ny50-c1b7f9939a74d3d1-v1/source-manifest.json",
+    "read_back_verified": true,
+    "sha256": "4da50c12cccc3d8890a54ddb2b1f2c23b342dc2a0f068be5101a463be40f9bd1"
+  },
+  {
+    "bucket": "workforce-replay-yv-260913-wf-view",
+    "bytes": 3462,
+    "generation": "1789288218352781",
+    "key": "releases/cms-ny50-c1b7f9939a74d3d1-v1/inventory.json",
+    "read_back_verified": true,
+    "sha256": "44c386410af85f7d83947c4280081213f4d03be2252534ea05add38cf9d783d4"
+  },
+  {
+    "bucket": "workforce-replay-yv-260913-wf-input",
+    "bytes": 450385,
+    "generation": "1789288218867093",
+    "key": "releases/cms-ny50-c1b7f9939a74d3d1-v1/bigquery/daily.parquet",
+    "read_back_verified": true,
+    "sha256": "caa2174c5110a9264f6dc95044c73e030d579b900caeb766bb9eb7a8c06ffc31"
+  },
+  {
+    "bucket": "workforce-replay-yv-260913-wf-input",
+    "bytes": 475316,
+    "generation": "1789288219513900",
+    "key": "releases/cms-ny50-c1b7f9939a74d3d1-v1/bigquery/forecasts.parquet",
+    "read_back_verified": true,
+    "sha256": "b5bc0c14c3022f50a961de8fc4a7369c12d2c5bae06a910d6b63cefef2827695"
+  },
+  {
+    "bucket": "workforce-replay-yv-260913-wf-input",
+    "bytes": 35024,
+    "generation": "1789288219924361",
+    "key": "releases/cms-ny50-c1b7f9939a74d3d1-v1/bigquery/outcomes.parquet",
+    "read_back_verified": true,
+    "sha256": "728874d300ecd554f895a8c8795e6323d242d83ee9e1c01ee332600305dc7b66"
+  },
+  {
+    "bucket": "workforce-replay-yv-260913-wf-input",
+    "bytes": 457605,
+    "generation": "1789288220397373",
+    "key": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/daily.parquet",
+    "read_back_verified": true,
+    "sha256": "6069ca967da4613563f88dd96742d9559a89c3a784e80f36733c14a4e7da1259"
+  },
+  {
+    "bucket": "workforce-replay-yv-260913-wf-input",
+    "bytes": 1825055,
+    "generation": "1789288221635060",
+    "key": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/features.parquet",
+    "read_back_verified": true,
+    "sha256": "42351c7944cebd6970766f04aa022ef04cb4f10609061952e00e0348bcbeca86"
+  },
+  {
+    "bucket": "workforce-replay-yv-260913-wf-input",
+    "bytes": 211285,
+    "generation": "1789288222225338",
+    "key": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/models/bundle.joblib",
+    "read_back_verified": true,
+    "sha256": "ae014a6bb53d3157650d5bdd850f9c69af72e83b1b45580ed26638e566c0eaf0"
+  },
+  {
+    "bucket": "workforce-replay-yv-260913-wf-input",
+    "bytes": 5817,
+    "generation": "1789288222617509",
+    "key": "releases/cms-ny50-c1b7f9939a74d3d1-v1/full/models/metadata.json",
+    "read_back_verified": true,
+    "sha256": "5c632fefbbaad29109039161b06824d38c629bb1e7bb64feac01555fe1965f08"
+  },
+  {
+    "bucket": "workforce-replay-yv-260913-wf-input",
+    "bytes": 128719,
+    "generation": "1789288222912023",
+    "key": "releases/cms-ny50-c1b7f9939a74d3d1-v1/source-manifest.json",
+    "read_back_verified": true,
+    "sha256": "4da50c12cccc3d8890a54ddb2b1f2c23b342dc2a0f068be5101a463be40f9bd1"
+  },
+  {
+    "bucket": "workforce-replay-yv-260913-wf-input",
+    "bytes": 1786,
+    "generation": "1789288223216864",
+    "key": "releases/cms-ny50-c1b7f9939a74d3d1-v1/inventory.json",
+    "read_back_verified": true,
+    "sha256": "29f6984b2bfea545b4c983920d9f8ddd6accd3cd9dabfc178cdd9715f279f575"
+  },
+  {
+    "bucket": "workforce-replay-yv-260913-wf-input",
+    "bytes": 814,
+    "generation": "1789288223436870",
+    "key": "releases/cms-ny50-c1b7f9939a74d3d1-v1/job-input.json",
+    "read_back_verified": true,
+    "sha256": "e92a44c60ade1871ca4e70889997d79f49b81b50b4a775fa7606bcca588d229a"
+  }
+]

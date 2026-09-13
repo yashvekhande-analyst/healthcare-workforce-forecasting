@@ -1,0 +1,31 @@
+{
+  "dry_run_bytes": 4471550,
+  "job_id": "workforce_integrity_a054d89f21264410",
+  "location": "us-central1",
+  "maximum_bytes_billed": 1073741824,
+  "rows": [
+    {
+      "daily_rows": 36500,
+      "duplicate_daily_keys": 0,
+      "duplicate_forecast_keys": 0,
+      "duplicate_outcome_keys": 0,
+      "forecast_rows": 26001,
+      "forecasts_without_outcome_row": 0,
+      "known_outcomes": 8660,
+      "outcome_rows": 8667,
+      "reported_days": 36319
+    }
+  ],
+  "statistics": {
+    "creationTime": "1789288395036",
+    "startTime": "1789288395106",
+    "endTime": "1789288396144",
+    "totalBytesProcessed": "4471550",
+    "query": {
+      "totalBytesBilled": "31457280",
+      "totalBytesProcessed": "4471550",
+      "totalSlotMs": "108640",
+      "cacheHit": false
+    }
+  }
+}
