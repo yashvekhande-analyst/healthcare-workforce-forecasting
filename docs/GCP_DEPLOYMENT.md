@@ -1,6 +1,6 @@
 # Google Cloud deployment
 
-This extends the existing historical replay. It never acquires new CMS data, retunes, or retrains the model. **Consult [verification status](GCP_VERIFICATION.md) before describing any component as deployed.** Current CLI and local preparation are verified; billable cloud execution is pending billing setup.
+This extends the existing historical replay. It never acquires new CMS data, retunes, or retrains the model. **Consult [verification status](GCP_VERIFICATION.md) before describing any component as deployed.** CLI access, local preparation and Linux container execution are verified; billable Google Cloud execution is pending billing setup.
 
 ## Region, identity, and cost
 

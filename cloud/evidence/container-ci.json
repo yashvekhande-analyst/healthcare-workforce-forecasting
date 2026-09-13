@@ -1,0 +1,60 @@
+{
+  "environment": "GitHub Actions Ubuntu / Docker; not Google Cloud Run",
+  "source_commit": "7a49c9a9820b608f16912bfe46f615854f564cc8",
+  "run_url": "https://github.com/yashvekhande-analyst/healthcare-workforce-forecasting/actions/runs/34747130332",
+  "job_id": 103696999702,
+  "tests": {
+    "passed": 22,
+    "seconds": 4.82
+  },
+  "docker_image_id": "sha256:eafce6a7349dcec48c8f3ccf15e8e2449281460c7766d17a210b4e924f395df5",
+  "smoke": {
+    "dashboard_health": true,
+    "read_only_mount": true,
+    "batch_retry_unchanged": true,
+    "controlled_failure_exit": 1,
+    "output_files": 4
+  },
+  "events": [
+    {
+      "severity": "INFO",
+      "event": "dashboard_artifacts_verified",
+      "dataset_version": "cms-ny50-c1b7f9939a74d3d1-v1",
+      "model_version": "c1b7f9939a74d3d1",
+      "verified_files": 17,
+      "mount_read_only": true
+    },
+    {
+      "severity": "INFO",
+      "event": "replay_success",
+      "execution": "container-smoke",
+      "attempt": 0,
+      "artifact_id": "062681b80786c707cca1aed1",
+      "issued": 49,
+      "evaluable": 49,
+      "metrics": {
+        "n": 49,
+        "mae_hours": 40.24285714285714,
+        "wape": 0.07300569932418173,
+        "signed_error_hours": -9.981632653061228,
+        "actual_hours_sum": 27010.22,
+        "absolute_error_sum": 1971.8999999999999,
+        "coverage": 0.8571428571428571,
+        "mean_width_hours": 395.689259645464
+      },
+      "output_keys": [
+        "runs/cms-ny50-c1b7f9939a74d3d1-v1/062681b80786c707cca1aed1/predictions.parquet",
+        "runs/cms-ny50-c1b7f9939a74d3d1-v1/062681b80786c707cca1aed1/actuals.parquet",
+        "runs/cms-ny50-c1b7f9939a74d3d1-v1/062681b80786c707cca1aed1/report.json"
+      ]
+    },
+    {
+      "severity": "ERROR",
+      "event": "replay_failed",
+      "execution": "container-smoke",
+      "attempt": 0,
+      "error_type": "FileNotFoundError",
+      "message": "[Errno 2] No such file or directory: '/inputs/tests/intentionally-missing/job-input.json'"
+    }
+  ]
+}

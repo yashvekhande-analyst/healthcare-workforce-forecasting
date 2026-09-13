@@ -13,7 +13,8 @@ Status as of 2026-09-13: **local cloud preparation verified; hosted deployment p
 | Full local tests | Verified | 22 tests passed; original analytical artifacts unchanged |
 | GCS uploads and runtime permissions | Not executed | Requires enabled billing and infrastructure creation |
 | BigQuery loads and reconciliation | Not executed | SQL and reconciliation runner prepared; local metrics are reference values only |
-| Container build / hosted UI | Not executed | Build config and verified-mount entry point prepared; Docker unavailable locally |
+| Linux container build and smoke tests | Verified in GitHub Actions | Built existing Dockerfile; 1 CPU / 1 GiB; dashboard health, read-only mount and checksums; batch success, repeat without changes, controlled missing-input failure |
+| Cloud Build / hosted UI | Not executed | Google Cloud billing required; container CI is not hosted Cloud Run verification |
 | Cloud Run job success / controlled failure | Not executed | One manually triggered job configuration prepared; cloud execution IDs do not yet exist |
 | User repeat operation | Pending | Follow the small query exercise after successful deployment |
 
@@ -28,6 +29,12 @@ Status as of 2026-09-13: **local cloud preparation verified; hosted deployment p
 Dataset release: `cms-ny50-c1b7f9939a74d3d1-v1`. Existing model bundle: `c1b7f9939a74d3d1`. Batch input-manifest SHA-256: `e92a44c60ade1871ca4e70889997d79f49b81b50b4a775fa7606bcca588d229a`.
 
 The original 50-facility analysis and model are preserved. Only an optional artifact-release caption was added to the existing dashboard. No real-data retraining occurred. Tests may train their existing small synthetic fixtures.
+
+## Container execution evidence
+
+[GitHub Actions run 34747130332](https://github.com/yashvekhande-analyst/healthcare-workforce-forecasting/actions/runs/34747130332) succeeded for implementation commit `7a49c9a9820b608f16912bfe46f615854f564cc8`: 22 tests passed in 4.82 seconds, then Docker build and container checks passed. [Sanitized event extract](../cloud/evidence/container-ci.json) preserves the actual emitted events and run identifiers.
+
+The container verified 16 dashboard data/report files plus the source manifest and started on port 8080 with a read-only bind mount. The March 24 batch issued and evaluated 49 forecasts: MAE 40.24285714 hours, WAPE 7.30056993%, signed error -9.98163265 hours, coverage 85.71428571%. These are one-origin results, distinct from the full held-out benchmark above. Artifact ID `062681b80786c707cca1aed1` was reused without changing output bytes on a second execution. A missing input produced `replay_failed`, `FileNotFoundError`, and exit 1. These runs used local Docker volumes in CI; they did not verify GCS IAM or create Cloud Run executions.
 
 ## Evidence required before marking deployment complete
 
