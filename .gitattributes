@@ -1,0 +1,5 @@
+# Preserve the exact bytes of the existing source and checksum-audited evidence.
+# Python and Markdown readers accept the included line endings on all platforms.
+* -text
+# The archived independent export has CRCRLF endings; preserve its checksum.
+artifacts/full/reports/independent_sql_metrics.csv -whitespace

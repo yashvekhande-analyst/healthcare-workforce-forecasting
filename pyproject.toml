@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools==80.9.0", "wheel==0.45.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "healthcare-workforce-forecast"
+version = "1.0.0"
+description = "Independent portfolio: historical replay of nursing-home contract staffing utilization"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "numpy==2.2.6", "pandas==2.2.3", "duckdb==1.3.2", "pyarrow==20.0.0",
+  "scikit-learn==1.6.1", "streamlit==1.45.1", "plotly==6.1.2",
+  "requests==2.32.4", "matplotlib==3.10.3", "joblib==1.5.1"
+]
+
+[project.optional-dependencies]
+dev = ["pytest==8.3.5"]
+
+[project.scripts]
+workforce = "workforce.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+workforce = ["sql/*.sql"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

@@ -1,0 +1,9 @@
+{
+  "name": "dev", "state": "NY", "start": "2024-04-01", "end": "2026-03-31",
+  "facilities": 5, "seed": 42, "eligibility_coverage": 0.95,
+  "initial_train_end": "2024-12-31",
+  "validation": [["2025-01-01", "2025-03-24"], ["2025-04-01", "2025-06-23"]],
+  "fit_cutoff": "2025-06-30", "calibration": ["2025-07-01", "2025-09-23"],
+  "test": ["2025-10-01", "2026-03-24"], "alpha": 0.1,
+  "monitoring": {"minimum_completeness": 0.95, "stale_days": 2, "psi": 0.2, "mae_ratio": 1.5, "minimum_coverage": 0.8, "minimum_realized": 30}
+}

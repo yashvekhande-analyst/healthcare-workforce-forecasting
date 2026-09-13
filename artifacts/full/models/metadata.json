@@ -1,0 +1,217 @@
+{
+  "version": "c1b7f9939a74d3d1",
+  "selected_model": "previous_7",
+  "selected_validation_candidate": "previous_7",
+  "gradient_parameters": {
+    "max_leaf_nodes": 7,
+    "l2_regularization": 10.0
+  },
+  "gradient_candidate": "gb_1",
+  "search_candidates": [
+    {
+      "max_leaf_nodes": 7,
+      "l2_regularization": 1.0
+    },
+    {
+      "max_leaf_nodes": 7,
+      "l2_regularization": 10.0
+    },
+    {
+      "max_leaf_nodes": 15,
+      "l2_regularization": 1.0
+    },
+    {
+      "max_leaf_nodes": 15,
+      "l2_regularization": 10.0
+    }
+  ],
+  "selection_rule": "minimum pooled validation MAE; final test is untouched",
+  "fit_cutoff": "2025-06-30",
+  "training_n": 21009,
+  "training_origin_start": "2024-04-28",
+  "training_origin_end": "2025-06-23",
+  "calibration_origins": [
+    "2025-07-01",
+    "2025-09-23"
+  ],
+  "calibration_target_end": "2025-09-30",
+  "calibration_n": 646,
+  "valid_from": "2025-10-01",
+  "alpha": 0.1,
+  "quantiles": {
+    "previous_7": 0.36496350364963503,
+    "trailing_28": 0.4003717323527061,
+    "gradient_boosted": 0.3527486190922946
+  },
+  "feature_columns": [
+    "contract_today",
+    "previous_7",
+    "trailing_28",
+    "contract_std7",
+    "contract_std28",
+    "zero_fraction28",
+    "contract_lag7",
+    "contract_lag14",
+    "employee_mean7",
+    "employee_mean28",
+    "census_today",
+    "census_mean7",
+    "census_lag7",
+    "next_weekday",
+    "season_sin",
+    "season_cos",
+    "facility",
+    "county"
+  ],
+  "feature_data_sha256": "42351c7944cebd6970766f04aa022ef04cb4f10609061952e00e0348bcbeca86",
+  "validation_scores": [
+    {
+      "model": "previous_7",
+      "n": 8266,
+      "mae_hours": 40.87617832083233,
+      "wape": 0.06986624657679524,
+      "signed_error_hours": 0.7095487539317692,
+      "actual_hours_sum": 4836133.42,
+      "absolute_error_sum": 337882.49000000005,
+      "origin_start": "2025-01-01",
+      "origin_end": "2025-06-23",
+      "facility_count": 50
+    },
+    {
+      "model": "trailing_28",
+      "n": 8266,
+      "mae_hours": 41.375875272199366,
+      "wape": 0.07072033695050539,
+      "signed_error_hours": 2.595886160174208,
+      "actual_hours_sum": 4836133.42,
+      "absolute_error_sum": 342012.985,
+      "origin_start": "2025-01-01",
+      "origin_end": "2025-06-23",
+      "facility_count": 50
+    },
+    {
+      "model": "gb_1",
+      "n": 8266,
+      "mae_hours": 42.70008528719894,
+      "wape": 0.07298369882111036,
+      "signed_error_hours": -2.1304359662085353,
+      "actual_hours_sum": 4836133.42,
+      "absolute_error_sum": 352958.9049839864,
+      "origin_start": "2025-01-01",
+      "origin_end": "2025-06-23",
+      "facility_count": 50
+    },
+    {
+      "model": "gb_0",
+      "n": 8266,
+      "mae_hours": 42.89220441887643,
+      "wape": 0.0733120720491687,
+      "signed_error_hours": -2.206626737267318,
+      "actual_hours_sum": 4836133.42,
+      "absolute_error_sum": 354546.9617264326,
+      "origin_start": "2025-01-01",
+      "origin_end": "2025-06-23",
+      "facility_count": 50
+    },
+    {
+      "model": "gb_3",
+      "n": 8266,
+      "mae_hours": 44.124047663572085,
+      "wape": 0.07541755909353857,
+      "signed_error_hours": -2.761429431778124,
+      "actual_hours_sum": 4836133.42,
+      "absolute_error_sum": 364729.37798708683,
+      "origin_start": "2025-01-01",
+      "origin_end": "2025-06-23",
+      "facility_count": 50
+    },
+    {
+      "model": "gb_2",
+      "n": 8266,
+      "mae_hours": 44.56477928513213,
+      "wape": 0.07617086494088127,
+      "signed_error_hours": -2.6732397221173008,
+      "actual_hours_sum": 4836133.42,
+      "absolute_error_sum": 368372.4655709022,
+      "origin_start": "2025-01-01",
+      "origin_end": "2025-06-23",
+      "facility_count": 50
+    }
+  ],
+  "reference_features": {
+    "previous_7": {
+      "cutpoints": [
+        0.0,
+        38.916000000000075,
+        112.75,
+        182.56999999999996,
+        284.008,
+        525.5280000000001,
+        916.5040000000006,
+        1889.1380000000006
+      ],
+      "probabilities": [
+        0.0,
+        0.30001427959445953,
+        0.09990956256842305,
+        0.10005235851301823,
+        0.10000475986481984,
+        0.10000475986481984,
+        0.10000475986481984,
+        0.10000475986481984,
+        0.10000475986481984
+      ]
+    },
+    "census_mean7": {
+      "cutpoints": [
+        46.0,
+        73.85714285714286,
+        99.57142857142857,
+        111.71428571428571,
+        135.28571428571428,
+        156.71428571428572,
+        190.57142857142858,
+        223.0,
+        261.6285714285716
+      ],
+      "probabilities": [
+        0.09929078014184398,
+        0.10029035175401019,
+        0.0991479841972488,
+        0.10095673282878766,
+        0.09957637203103432,
+        0.10000475986481984,
+        0.09990956256842305,
+        0.100147555809415,
+        0.10067114093959731,
+        0.10000475986481984
+      ]
+    },
+    "employee_mean7": {
+      "cutpoints": [
+        146.16400000000002,
+        198.69914285714285,
+        277.8528571428572,
+        317.14285714285717,
+        349.7142857142857,
+        422.3097142857143,
+        487.5957142857143,
+        565.5142857142857,
+        674.7634285714286
+      ],
+      "probabilities": [
+        0.10000475986481984,
+        0.10000475986481984,
+        0.10000475986481984,
+        0.09986196392022467,
+        0.10009995716121663,
+        0.10000475986481984,
+        0.10000475986481984,
+        0.10000475986481984,
+        0.10000475986481984,
+        0.10000475986481984
+      ]
+    }
+  },
+  "bundle_sha256": "ae014a6bb53d3157650d5bdd850f9c69af72e83b1b45580ed26638e566c0eaf0"
+}

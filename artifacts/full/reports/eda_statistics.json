@@ -1,0 +1,9 @@
+{
+  "training_daily_zero_fraction": 0.3037818181818182,
+  "training_weekly_zero_fraction": 0.26791044776119405,
+  "training_census_contract_correlation": 0.6087172281611705,
+  "training_contract_daily_mean": 85.49740945454545,
+  "training_employee_daily_mean": 393.02425527272726,
+  "training_daily_contract_p99": 615.1275,
+  "training_daily_contract_max": 754.75
+}

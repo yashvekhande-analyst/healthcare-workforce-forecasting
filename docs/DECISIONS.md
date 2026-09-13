@@ -1,0 +1,15 @@
+# Engineering and analysis decisions
+
+- Independent portfolio project for workforce planning analysts. No Ascension affiliation, implementation, employment, production users, or realized savings claimed.
+- Domain: nursing homes. Target: observed contract RN + LPN + CNA utilization during T+1 through T+7, in hours. Administrative RN/LPN roles, RN directors, trainees and medication aides are outside this target. Do not add employee hours or aggregate role totals to contract components.
+- Source availability verified 2026-09-13 from the official CMS catalog. Full profile: 2024Q2–2026Q1, New York, up to 50 facilities. Raw API pages are original unchanged responses; national CSV downloads and manual CSV ingestion are also supported.
+- Simulate a daily internal feed available by the end of T, including lagged MDS census. Public CMS releases are quarterly and revised retrospectively. This simulation does not prove operational point-in-time availability; MDS census is retrospectively derived.
+- Select facilities with at least 95% valid training dates in the first three quarters, ordered by deterministic seeded identifier hash. No test completeness or performance is used. Track subsequent disappearances as missing; never replace facilities using later data.
+- Create a complete facility/calendar grid. Preserve reported zero values. Invalid/missing component hours make the daily contract total unavailable; require all 7 outcome days and all 28 history days. Retain unusual positive observations and report them rather than winsorizing outcomes.
+- Tune four gradient-boosted candidates with two expanding validation windows. Training labels must finish by each cutoff. Primary selection metric: pooled validation MAE, with simple baselines retained if stronger.
+- Freeze final point models at the end of the second validation quarter. Separate next-quarter calibration uses every seventh origin to avoid overlapping seven-day calibration targets within a facility. Last two quarters are final testing; no post-test tuning.
+- Scale absolute calibration residuals by 1 + preceding-seven-day hours; use the finite-sample 90% conformal quantile and nonnegative lower endpoints. Temporal dependence, cross-facility dependence, abrupt changes and CMS selection mean nominal coverage is not guaranteed.
+- Local DuckDB/Parquet, scikit-learn, Streamlit, Plotly, pytest and Docker keep the application manageable. No cloud credentials required. GCP configuration is preparation only until explicitly authorized and executed.
+- Forecast records are immutable; attach realized outcomes separately. Alerts require human review and do not automatically retrain or deploy.
+- Runtime: Python 3.12 for the fully resolved lock (SciPy 1.18.1 requires Python >=3.12). Single-thread fitting is sufficient at this scale and avoids restricted Windows process-pipe behavior. The package supports wheel installation and includes its SQL resource.
+- Final measured selection retained the previous-seven-day baseline. Undercoverage, especially the medium-volume group and zero-to-positive transitions, is documented without changing the interval calibration after test inspection.

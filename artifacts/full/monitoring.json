@@ -1,0 +1,42 @@
+{
+  "mode": "historical replay monitoring",
+  "asof": "2026-03-31",
+  "clock_basis": "replay date (not today's date)",
+  "model_version": "c1b7f9939a74d3d1",
+  "status": "REVIEW",
+  "completeness_28d": 0.98,
+  "stale_facilities": 1,
+  "feature_psi": {
+    "previous_7": 0.14934266581444672,
+    "census_mean7": 0.04178195778827102,
+    "employee_mean7": 0.05854963195035616
+  },
+  "realized_last_28_days": {
+    "n": 1372,
+    "mae_hours": 37.353833819241984,
+    "wape": 0.06819070937633066,
+    "signed_error_hours": -4.886807580174926,
+    "actual_hours_sum": 751560.74,
+    "absolute_error_sum": 51249.46000000001,
+    "coverage": 0.8644314868804664,
+    "mean_width_hours": 396.88905322295767
+  },
+  "realized_status": "available",
+  "thresholds": {
+    "minimum_completeness": 0.95,
+    "stale_days": 2,
+    "psi": 0.2,
+    "mae_ratio": 1.5,
+    "minimum_coverage": 0.8,
+    "minimum_realized": 30
+  },
+  "alerts": [
+    {
+      "check": "stale_facilities",
+      "value": 1,
+      "threshold": 2,
+      "action": "Check assumed daily feed freshness and source exclusions."
+    }
+  ],
+  "automatic_retraining": false
+}
